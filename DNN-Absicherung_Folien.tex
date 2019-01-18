@@ -1,0 +1,54 @@
+% --------------------------
+% Vortrag:
+% Überblick über die Absicherung von DNNs im autonomen Fahren
+% 2018-12-20
+%
+% Gesina Schwalbe,
+% Kolloquium des Lehrstuhls KogSys, Fakultät WIAI, Universität Bamberg
+%
+% - Präsentationsheader -
+% ---------------------------
+
+\documentclass[%
+ngerman, usepdftitle=true,%
+ignorenonframetext, noamsthm, notheorems,%
+%aspectratio=169,%
+%handout
+]{beamer}
+\usepackage{calc}
+
+% presentation specific settings
+\mode<presentation>{%
+% note settings
+%\setbeameroption{show notes}
+
+% themes
+\usetheme{Warsaw}%Rochester}%Frankfurt}%Singapore}%Dresden
+\usecolortheme{seahorse}
+
+% \usetheme{Singapore}%Frankfurt, Dresden, Rochester
+% \usecolortheme{seahorse}
+
+
+% beamer settings
+\setbeamercovered{highly dynamic}
+
+% beamer templates
+\setbeamertemplate{background canvas}[vertical shading][bottom=gray!30,top=white]
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+}
+\AtBeginSection[]{
+  \frame{\sectionpage\par\vspace{1eM}\tableofcontents[sections=\value{section}]}
+  % \frame[t]{\frametitle{Outline}\tableofcontents[sections=\value{section}]}
+}
+
+\beamerdefaultoverlayspecification{<+->} 
+
+\input{DNN-Absicherung}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% ispell-local-dictionary: "en_US"
+%%% End:

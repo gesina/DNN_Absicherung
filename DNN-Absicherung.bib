@@ -1,0 +1,895 @@
+
+@article{salay_analysis_2017,
+	title = {An Analysis of {ISO} 26262: Using Machine Learning Safely in Automotive Software},
+	url = {http://arxiv.org/abs/1709.02435},
+	shorttitle = {An Analysis of {ISO} 26262},
+	abstract = {Machine learning ({ML}) plays an ever-increasing role in advanced automotive functionality for driver assistance and autonomous operation; however, its adequacy from the perspective of safety certification remains controversial. In this paper, we analyze the impacts that the use of {ML} as an implementation approach has on {ISO} 26262 safety lifecycle and ask what could be done to address them. We then provide a set of recommendations on how to adapt the standard to accommodate {ML}.},
+	journaltitle = {{arXiv}:1709.02435 [cs]},
+	author = {Salay, Rick and Queiroz, Rodrigo and Czarnecki, Krzysztof},
+	date = {2017-09-07},
+	eprinttype = {arxiv},
+	eprint = {1709.02435},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Software Engineering, Computer Science - Systems and Control, Surveys on Safety for {AI}},
+	annotation = {Which parts of {ISO}26262 are applicable to {AI}},
+	file = {Salay et al. - 2017 - An Analysis of ISO 26262 Using Machine Learning S.pdf:C\:\\Users\\uidn4113\\Zotero\\storage\\NV7ME6IS\\Salay et al. - 2017 - An Analysis of ISO 26262 Using Machine Learning S.pdf:application/pdf}
+}
+
+@incollection{menzies_verification_2005,
+	title = {Verification and Validation and Artificial Intelligence},
+	volume = {65},
+	url = {http://www.sciencedirect.com/science/article/pii/S0065245805650048},
+	abstract = {Artificial Intelligence ({AI}) is useful. {AI} can deliver more functionality for reduced cost. {AI} should be used more widely but won't be unless developers can trust adaptive, nondeterministic, or complex {AI} systems. Verification and validation is one method used by software analysts to gain that trust. {AI} systems have features that make them hard to check using conventional V\&V methods. Nevertheless, as we show in this chapter, there are enough alternative readily-available methods that enable the V\&V of {AI} software.},
+	pages = {153--201},
+	booktitle = {Advances in Computers},
+	publisher = {Elsevier},
+	author = {Menzies, Tim and Pecheur, Charles},
+	date = {2005-01-01},
+	doi = {10.1016/S0065-2458(05)65004-8}
+}
+
+@article{gilpin_explaining_2018,
+	title = {Explaining Explanations: An Approach to Evaluating Interpretability of Machine Learning},
+	url = {http://arxiv.org/abs/1806.00069},
+	shorttitle = {Explaining Explanations},
+	abstract = {There has recently been a surge of work in explanatory artificial intelligence ({XAI}). This research area tackles the important problem that complex machines and algorithms often cannot provide insights into their behavior and thought processes. {XAI} allows users and parts of the internal system to be more transparent, providing explanations of their decisions in some level of detail. These explanations are important to ensure algorithmic fairness, identify potential bias/problems in the training data, and to ensure that the algorithms perform as expected. However, explanations produced by these systems is neither standardized nor systematically assessed. In an effort to create best practices and identify open challenges, we provide our definition of explainability and show how it can be used to classify existing literature. We discuss why current approaches to explanatory methods especially for deep neural networks are insufficient. Finally, based on our survey, we conclude with suggested future research directions for explanatory artificial intelligence.},
+	journaltitle = {{arXiv}:1806.00069 [cs, stat]},
+	author = {Gilpin, Leilani H. and Bau, David and Yuan, Ben Z. and Bajwa, Ayesha and Specter, Michael and Kagal, Lalana},
+	date = {2018-05-31},
+	eprinttype = {arxiv},
+	eprint = {1806.00069},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	annotation = {Classification of {XAI} approaches with large list of examples/surveys; definition of explainable, interpretable, complete with classifications}
+}
+
+@article{hailesilassie_rule_2016,
+	title = {Rule Extraction Algorithm for Deep Neural Networks: A Review},
+	url = {https://arxiv.org/abs/1610.05267},
+	shorttitle = {Rule Extraction Algorithm for Deep Neural Networks},
+	author = {Hailesilassie, Tameru},
+	date = {2016-09-16},
+	langid = {english},
+	annotation = {Nice list of rule extraction algorithms with categorisation; applicability study for {DNN}: only pedagogical (=black box) approaches or {DeepRED}}
+}
+
+@article{katz_reluplex:_2017,
+	title = {Reluplex: An Efficient {SMT} Solver for Verifying Deep Neural Networks},
+	url = {http://arxiv.org/abs/1702.01135},
+	shorttitle = {Reluplex},
+	abstract = {Deep neural networks have emerged as a widely used and effective means for tackling complex, real-world problems. However, a major obstacle in applying them to safety-critical systems is the great difficulty in providing formal guarantees about their behavior. We present a novel, scalable, and efficient technique for verifying properties of deep neural networks (or providing counter-examples). The technique is based on the simplex method, extended to handle the non-convex Rectified Linear Unit ({ReLU}) activation function, which is a crucial ingredient in many modern neural networks. The verification procedure tackles neural networks as a whole, without making any simplifying assumptions. We evaluated our technique on a prototype deep neural network implementation of the next-generation airborne collision avoidance system for unmanned aircraft ({ACAS} Xu). Results show that our technique can successfully prove properties of networks that are an order of magnitude larger than the largest networks verified using existing methods.},
+	journaltitle = {{arXiv}:1702.01135 [cs]},
+	author = {Katz, Guy and Barrett, Clark and Dill, David and Julian, Kyle and Kochenderfer, Mykel},
+	date = {2017-02-03},
+	eprinttype = {arxiv},
+	eprint = {1702.01135},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Logic in Computer Science},
+	annotation = {Comment: This is the extended version of a paper with the same title that appeared at {CAV} 2017},
+	annotation = {Reluplex: {SMT} solver for {ReLu}-activation only {NNs}: verify or falsify (with counterexample) first-order logic expressions on ({\textgreater},{\textless},=,+,-,*)-relations between any two node values; tested on 8-layer, 300-node {FCNNs}; def. "global robustness"; inefficient for global robustness check; Outlook: {SMT}-solver for other activations (e.g. {MaxPooling})}
+}
+
+@article{bunel_unified_2017,
+	title = {A Unified View of Piecewise Linear Neural Network Verification},
+	url = {http://arxiv.org/abs/1711.00455},
+	abstract = {The success of Deep Learning and its potential use in many safety-critical applications has motivated research on formal verification of Neural Network ({NN}) models. Despite the reputation of learned {NN} models to behave as black boxes and the theoretical hardness of proving their properties, researchers have been successful in verifying some classes of models by exploiting their piecewise linear structure and taking insights from formal methods such as Satisifiability Modulo Theory. These methods are however still far from scaling to realistic neural networks. To facilitate progress on this crucial area, we make two key contributions. First, we present a unified framework that encompasses previous methods. This analysis results in the identification of new methods that combine the strengths of multiple existing approaches, accomplishing a speedup of two orders of magnitude compared to the previous state of the art. Second, we propose a new data set of benchmarks which includes a collection of previously released testcases. We use the benchmark to provide the first experimental comparison of existing algorithms and identify the factors impacting the hardness of verification problems.},
+	journaltitle = {{arXiv}:1711.00455 [cs]},
+	author = {Bunel, Rudy and Turkaslan, Ilker and Torr, Philip H. S. and Kohli, Pushmeet and Kumar, M. Pawan},
+	date = {2017-11-01},
+	eprinttype = {arxiv},
+	eprint = {1711.00455},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	annotation = {Comment: Updated version of "Piecewise Linear Neural Network verification: A comparative study"},
+	annotation = {Comparison of/unified framework for {SMT}-based verification-through-guaranteed-falsification methods (e.g. Reluplex); major speed-up}
+}
+
+@article{huang_safety_2016,
+	title = {Safety Verification of Deep Neural Networks},
+	url = {http://arxiv.org/abs/1610.06940},
+	abstract = {Deep neural networks have achieved impressive experimental results in image classification, but can surprisingly be unstable with respect to adversarial perturbations, that is, minimal changes to the input image that cause the network to misclassify it. With potential applications including perception modules and end-to-end controllers for self-driving cars, this raises concerns about their safety. We develop a novel automated verification framework for feed-forward multi-layer neural networks based on Satisfiability Modulo Theory ({SMT}). We focus on safety of image classification decisions with respect to image manipulations, such as scratches or changes to camera angle or lighting conditions that would result in the same class being assigned by a human, and define safety for an individual decision in terms of invariance of the classification within a small neighbourhood of the original image. We enable exhaustive search of the region by employing discretisation, and propagate the analysis layer by layer. Our method works directly with the network code and, in contrast to existing methods, can guarantee that adversarial examples, if they exist, are found for the given region and family of manipulations. If found, adversarial examples can be shown to human testers and/or used to fine-tune the network. We implement the techniques using Z3 and evaluate them on state-of-the-art networks, including regularised and deep learning networks. We also compare against existing techniques to search for adversarial examples and estimate network robustness.},
+	journaltitle = {{arXiv}:1610.06940 [cs, stat]},
+	author = {Huang, Xiaowei and Kwiatkowska, Marta and Wang, Sen and Wu, Min},
+	date = {2016-10-21},
+	eprinttype = {arxiv},
+	eprint = {1610.06940},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	annotation = {Alternative to Reluplex: {SMT}-based framework to automatically check (adversarial) robustness against given permutations; {GUARANTEES} to find counterexamples if existent},
+	annotation = {Comment: To appear as invited paper at {CAV} 2017}
+}
+
+@article{ruan_reachability_2018,
+	title = {Reachability Analysis of Deep Neural Networks with Provable Guarantees},
+	url = {https://arxiv.org/abs/1805.02242},
+	author = {Ruan, Wenjie and Huang, Xiaowei and Kwiatkowska, Marta},
+	date = {2018-05-06},
+	langid = {english},
+	annotation = {{DeepGo}: Reachability analysis tool for a variety of scales/layer types for classification feed-forward {DNNs}; given a box-shaped input subspace, find the least confidence for one class using boundary approximation; defines safety on given input subspace as constant output (i.e. locally robust);}
+}
+
+@article{dutta_output_2017,
+	title = {Output Range Analysis for Deep Neural Networks},
+	url = {http://arxiv.org/abs/1709.09130},
+	abstract = {Deep neural networks ({NN}) are extensively used for machine learning tasks such as image classification, perception and control of autonomous systems. Increasingly, these deep {NNs} are also been deployed in high-assurance applications. Thus, there is a pressing need for developing techniques to verify neural networks to check whether certain user-expected properties are satisfied. In this paper, we study a specific verification problem of computing a guaranteed range for the output of a deep neural network given a set of inputs represented as a convex polyhedron. Range estimation is a key primitive for verifying deep {NNs}. We present an efficient range estimation algorithm that uses a combination of local search and linear programming problems to efficiently find the maximum and minimum values taken by the outputs of the {NN} over the given input set. In contrast to recently proposed "monolithic" optimization approaches, we use local gradient descent to repeatedly find and eliminate local minima of the function. The final global optimum is certified using a mixed integer programming instance. We implement our approach and compare it with Reluplex, a recently proposed solver for deep neural networks. We demonstrate the effectiveness of the proposed approach for verification of {NNs} used in automated control as well as those used in classification.},
+	journaltitle = {{arXiv}:1709.09130 [cs, stat]},
+	author = {Dutta, Souradeep and Jha, Susmit and Sanakaranarayanan, Sriram and Tiwari, Ashish},
+	date = {2017-09-26},
+	eprinttype = {arxiv},
+	eprint = {1709.09130},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	annotation = {{SHERLOCK}: Output range analysis on convex polyhedron input sub-space for middle-sized feed-forward {ReLU}-only networks; based on {MILP} solving}
+}
+
+@article{guo_dlfuzz:_2018,
+	title = {{DLFuzz}: Differential Fuzzing Testing of Deep Learning Systems},
+	url = {http://arxiv.org/abs/1808.09413},
+	doi = {10.1145/3236024.3264835},
+	shorttitle = {{DLFuzz}},
+	abstract = {Deep learning ({DL}) systems are increasingly applied to safety-critical domains such as autonomous driving cars. It is of significant importance to ensure the reliability and robustness of {DL} systems. Existing testing methodologies always fail to include rare inputs in the testing dataset and exhibit low neuron coverage. In this paper, we propose {DLFuzz}, the frst differential fuzzing testing framework to guide {DL} systems exposing incorrect behaviors. {DLFuzz} keeps minutely mutating the input to maximize the neuron coverage and the prediction difference between the original input and the mutated input, without manual labeling effort or cross-referencing oracles from other {DL} systems with the same functionality. We present empirical evaluations on two well-known datasets to demonstrate its efficiency. Compared with {DeepXplore}, the state-of-the-art {DL} whitebox testing framework, {DLFuzz} does not require extra efforts to find similar functional {DL} systems for cross-referencing check, but could generate 338.59\% more adversarial inputs with 89.82\% smaller perturbations, averagely obtain 2.86\% higher neuron coverage, and save 20.11\% time consumption.},
+	journaltitle = {{arXiv}:1808.09413 [cs]},
+	author = {Guo, Jianmin and Jiang, Yu and Zhao, Yue and Chen, Quan and Sun, Jiaguang},
+	date = {2018-08-28},
+	eprinttype = {arxiv},
+	eprint = {1808.09413},
+	keywords = {Computer Science - Software Engineering},
+	annotation = {Comment: This paper is to appear in {ESEC}/{FSE}'2018 ({NIER} track)},
+	annotation = {{DLFuzz}: better {DeepXplore} (whitebox local robustness testing)}
+}
+
+@inproceedings{rabatin_towards_2018,
+	location = {Budapest},
+	title = {Towards the Verification of Neural Networks for Critical Cyber-Physical Systems},
+	abstract = {Smart technologies are emerging in the field of Cyber-Physical Systems ({CPS}) yielding new challenges for system engineers. Rigorous techniques are necessitated to ensure the correct and accident-free behaviour of critical {CPS}. Neural networks gain increasing popularity in {CPS}, and even critical functionalities may rely on neural network based solutions. In this paper, we overview the literature and summarize our experiences of a neural network verification algorithm used in an academic case-study.},
+	eventtitle = {25th Minisymposium of the Department of Measurement and Information Systems},
+	author = {Rabatin, Gábor and Vörös, András},
+	date = {2018},
+	annotation = {{DeepXplore} comparison/evaluation}
+}
+
+@article{pei_deepxplore:_2017,
+	title = {{DeepXplore}: Automated Whitebox Testing of Deep Learning Systems},
+	url = {http://arxiv.org/abs/1705.06640},
+	doi = {10.1145/3132747.3132785},
+	shorttitle = {{DeepXplore}},
+	abstract = {Deep learning ({DL}) systems are increasingly deployed in safety- and security-critical domains including self-driving cars and malware detection, where the correctness and predictability of a system's behavior for corner case inputs are of great importance. Existing {DL} testing depends heavily on manually labeled data and therefore often fails to expose erroneous behaviors for rare inputs. We design, implement, and evaluate {DeepXplore}, the first whitebox framework for systematically testing real-world {DL} systems. First, we introduce neuron coverage for systematically measuring the parts of a {DL} system exercised by test inputs. Next, we leverage multiple {DL} systems with similar functionality as cross-referencing oracles to avoid manual checking. Finally, we demonstrate how finding inputs for {DL} systems that both trigger many differential behaviors and achieve high neuron coverage can be represented as a joint optimization problem and solved efficiently using gradient-based search techniques. {DeepXplore} efficiently finds thousands of incorrect corner case behaviors (e.g., self-driving cars crashing into guard rails and malware masquerading as benign software) in state-of-the-art {DL} models with thousands of neurons trained on five popular datasets including {ImageNet} and Udacity self-driving challenge data. For all tested {DL} models, on average, {DeepXplore} generated one test input demonstrating incorrect behavior within one second while running only on a commodity laptop. We further show that the test inputs generated by {DeepXplore} can also be used to retrain the corresponding {DL} model to improve the model's accuracy by up to 3\%.},
+	pages = {1--18},
+	journaltitle = {Proceedings of the 26th Symposium on Operating Systems Principles  - {SOSP} '17},
+	author = {Pei, Kexin and Cao, Yinzhi and Yang, Junfeng and Jana, Suman},
+	date = {2017},
+	eprinttype = {arxiv},
+	eprint = {1705.06640},
+	keywords = {Computer Science - Machine Learning, Computer Science - Software Engineering, Computer Science - Cryptography and Security},
+	annotation = {Automated whitebox local robustness testing; good corner-case findings, however without guarantees; Def. Neuron Coverage},
+	annotation = {Comment: To be published in {SOSP}'17}
+}
+
+@article{shalev-shwartz_formal_2017,
+	title = {On a Formal Model of Safe and Scalable Self-driving Cars},
+	url = {http://arxiv.org/abs/1708.06374},
+	abstract = {In recent years, car makers and tech companies have been racing towards self driving cars. It seems that the main parameter in this race is who will have the first car on the road. The goal of this paper is to add to the equation two additional crucial parameters. The first is standardization of safety assurance --- what are the minimal requirements that every self-driving car must satisfy, and how can we verify these requirements. The second parameter is scalability --- engineering solutions that lead to unleashed costs will not scale to millions of cars, which will push interest in this field into a niche academic corner, and drive the entire field into a "winter of autonomous driving". In the first part of the paper we propose a white-box, interpretable, mathematical model for safety assurance, which we call Responsibility-Sensitive Safety ({RSS}). In the second part we describe a design of a system that adheres to our safety assurance requirements and is scalable to millions of cars.},
+	journaltitle = {{arXiv}:1708.06374 [cs, stat]},
+	author = {Shalev-Shwartz, Shai and Shammah, Shaked and Shashua, Amnon},
+	date = {2017-08-21},
+	eprinttype = {arxiv},
+	eprint = {1708.06374},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Robotics, Statistics - Machine Learning},
+	annotation = {Definition of hazardous situations and safe actions; increased accuracy through redundancy; sensible sensor setup}
+}
+
+@inproceedings{roychowdhury_image_2018,
+	title = {Image Classification Using Deep Learning and Prior Knowledge},
+	rights = {Authors who publish a paper in an  {AAAI} Technical Report  agree to the following terms:     Author(s) agree to grant to {AAAI} (1) the perpetual, nonexclusive world rights to use the submitted paper as part of an {AAAI} publication, in all languages and for all editions. (2) The right to use the paper, together with the author's name and pertinent biographical data, in advertising and promotion of it and the {AAAI} publication. (3) The right to publish or cause to be published the paper in connection with any republication of the {AAAI} publication in any medium including electronic. (4) The right to, and authorize others to, publish or cause to be published the paper in whole or in part, individually or in conjunction with other works, in any medium including electronic.   The author(s) warrants that they are the sole author and owner of the copyright in the above article/paper, except for those portions shown to be in quotations; that the article/paper is original throughout; and that the undersigned right to make the grants set forth above is complete and unencumbered.   The author(s) agree that if anyone brings any claim or action alleging facts that, if true, constitute a breach of any of the foregoing warranties, the author(s) will hold harmless and indemnify {AAAI}, their grantees, their licensees, and their distributors against any liability, whether under judgment, decree, or compromise, and any legal fees and expenses arising out of that claim or actions, and the undersigned will cooperate fully in any defense {AAAI} may make to such claim or action. Moreover, the undersigned agrees to cooperate in any claim or other action seeking to protect or enforce any right the undersigned has granted to {AAAI} in the article/paper. If any such claim or action fails because of facts that constitute a breach of any of the foregoing warranties, the undersigned agrees to reimburse whomever brings such claim or action for expenses and attorneys’ fees incurred therein.   Author(s) retain all proprietary rights (such as patent rights).   In the event the above article/paper is not accepted and published by {AAAI}, or is withdrawn by the author(s) before acceptance by {AAAI}, this agreement becomes null and void.},
+	url = {https://aaai.org/ocs/index.php/WS/AAAIW18/paper/view/16575},
+	abstract = {Deep learning has been very successful on image classification tasks in the past few years, because it allows to develop end-to-end solutions, taking as input the raw images in form of a grid of pixels and returning the class assignments. Semantic Based Regularization is used in this paper as a general and novel way to integrate prior knowledge into deep learning. Semantic Based Regularization takes as input the prior knowledge, expressed as a collection of first-order logic clauses ({FOL}), where each task to be learned corresponds to a predicate in the knowledge base. Then, it translates the knowledge into a set of constraints which can be either integrated into the learning process or used in a collective classification step during the test phase. The integration of the domain knowledge during the train or test phase is realized via the same backpropagation schema that runs over the expression trees of the grounded {FOL} clauses. The methodology can be applied on top of any learner and the experimental results on {CIFAR}-10 show how the integration of the prior knowledge boosts the accuracy of many different deep architectures.},
+	eventtitle = {Workshops at the Thirty-Second {AAAI} Conference on Artificial Intelligence},
+	booktitle = {Workshops at the Thirty-Second {AAAI} Conference on Artificial Intelligence},
+	author = {Roychowdhury, Soumali and Diligenti, Michelangelo and Gori, Marco},
+	date = {2018-06-20},
+	langid = {english},
+	annotation = {Learn constraints on output (esp. correlations), which are given as first order logic rules, by translating rules to t-norm fuzzy logic expressions and adding violation penalties to the loss; example: classification (higher concepts/classifications for correlation added as additional outputs, like "Animal" as superclass of "Dog" and "Bird")}
+}
+
+@article{hu_harnessing_2016,
+	title = {Harnessing Deep Neural Networks with Logic Rules},
+	url = {http://arxiv.org/abs/1603.06318},
+	abstract = {Combining deep neural networks with structured logic rules is desirable to harness flexibility and reduce uninterpretability of the neural models. We propose a general framework capable of enhancing various types of neural networks (e.g., {CNNs} and {RNNs}) with declarative first-order logic rules. Specifically, we develop an iterative distillation method that transfers the structured information of logic rules into the weights of neural networks. We deploy the framework on a {CNN} for sentiment analysis, and an {RNN} for named entity recognition. With a few highly intuitive rules, we obtain substantial improvements and achieve state-of-the-art or comparable results to previous best-performing systems.},
+	journaltitle = {{arXiv}:1603.06318 [cs, stat]},
+	author = {Hu, Zhiting and Ma, Xuezhe and Liu, Zhengzhong and Hovy, Eduard and Xing, Eric},
+	date = {2016-03-20},
+	eprinttype = {arxiv},
+	eprint = {1603.06318},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Computation and Language},
+	annotation = {Comment: Fix typos and experiment setting},
+	annotation = {Rule insertion of soft logic rules (with confidence measure) into {NNs}; For each batch: 1) project "student" version of weights to "teacher" version which follows the rules for this batch 2) update student wt distance to teacher network as additional loss term; no guarantees}
+}
+
+@article{dreossi_counterexample-guided_2018,
+	title = {Counterexample-Guided Data Augmentation},
+	url = {https://arxiv.org/abs/1805.06962},
+	author = {Dreossi, Tommaso and Ghosh, Shromona and Yue, Xiangyu and Keutzer, Kurt and Sangiovanni-Vincentelli, Alberto and Seshia, Sanjit A.},
+	date = {2018-05-17},
+	langid = {english},
+	annotation = {Framework and generator for learning with further examples of misclassified data}
+}
+
+@article{wang_renn:_2018,
+	title = {{ReNN}: Rule-embedded Neural Networks},
+	url = {http://arxiv.org/abs/1801.09856},
+	shorttitle = {{ReNN}},
+	abstract = {The artificial neural network shows powerful ability of inference, but it is still criticized for lack of interpretability and prerequisite needs of big dataset. This paper proposes the Rule-embedded Neural Network ({ReNN}) to overcome the shortages. {ReNN} first makes local-based inferences to detect local patterns, and then uses rules based on domain knowledge about the local patterns to generate rule-modulated map. After that, {ReNN} makes global-based inferences that synthesizes the local patterns and the rule-modulated map. To solve the optimization problem caused by rules, we use a two-stage optimization strategy to train the {ReNN} model. By introducing rules into {ReNN}, we can strengthen traditional neural networks with long-term dependencies which are difficult to learn with limited empirical dataset, thus improving inference accuracy. The complexity of neural networks can be reduced since long-term dependencies are not modeled with neural connections, and thus the amount of data needed to optimize the neural networks can be reduced. Besides, inferences from {ReNN} can be analyzed with both local patterns and rules, and thus have better interpretability. In this paper, {ReNN} has been validated with a time-series detection problem.},
+	journaltitle = {{arXiv}:1801.09856 [cs, stat]},
+	author = {Wang, Hu},
+	date = {2018-01-30},
+	eprinttype = {arxiv},
+	eprint = {1801.09856},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+	annotation = {Comment: poster paper in {ICPR}, 6 pages, 4 figures, and 1 Table},
+	annotation = {{ReNN}: 3-block model (fc example) where rules are inserted in the middle block after first feature extraction}
+}
+
+@inproceedings{ghosh_trusted_2016,
+	title = {Trusted Machine Learning for Probabilistic Models},
+	abstract = {In several mission-critical domains (e.g., selfdriving cars, cybersecurity, robotics) where machine learning algorithms are being used heavily, it is becoming increasingly important to ensure that the learned models satisfy some domain properties (e.g., temporal constraints). Towards this goal, we propose Trusted Machine Learning ({TML}), wherein we combine the strengths of machine learning and model checking. If the desired logical properties are not satisfied by a trained model, we modify either the model (‘model repair’) or the data from which the model is learned (‘data repair’). We outline a concrete case study based on the Markov Chain model of a car controller for ‘lane changing’ — we demonstrate how we can ensure that such a model, learned from data, satisfies properties specified in Probabilistic Computation Tree Logic ({PCTL}).},
+	author = {Ghosh, Shalini and Lincoln, Patrick and Tiwari, Ashish},
+	date = {2016},
+	keywords = {Algorithm, Checking (action), Chimeric antigen receptor, Computation tree logic, Computer security, Learning Disorders, Machine learning, Markov chain, Mission critical, Model checking, Probabilistic {CTL}, Probabilistic Turing machine, Robotics},
+	annotation = {Model repair towards satisfaction of probabalistic constraints for {RL}}
+}
+
+@article{dreossi_systematic_2017,
+	title = {Systematic Testing of Convolutional Neural Networks for Autonomous Driving},
+	url = {http://arxiv.org/abs/1708.03309},
+	abstract = {We present a framework to systematically analyze convolutional neural networks ({CNNs}) used in classification of cars in autonomous vehicles. Our analysis procedure comprises an image generator that produces synthetic pictures by sampling in a lower dimension image modification subspace and a suite of visualization tools. The image generator produces images which can be used to test the {CNN} and hence expose its vulnerabilities. The presented framework can be used to extract insights of the {CNN} classifier, compare across classification models, or generate training and validation datasets.},
+	journaltitle = {{arXiv}:1708.03309 [cs]},
+	author = {Dreossi, Tommaso and Ghosh, Shromona and Sangiovanni-Vincentelli, Alberto and Seshia, Sanjit A.},
+	date = {2017-08-10},
+	eprinttype = {arxiv},
+	eprint = {1708.03309},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition},
+	annotation = {Generation of realistic data for {AD}}
+}
+
+@online{rsalay_raw_2018,
+	title = {Raw data for {ISO} 26262 technique applicability analysis to {ML} components: rsalay/safetyml},
+	url = {https://github.com/rsalay/safetyml},
+	shorttitle = {Raw data for {ISO} 26262 technique applicability analysis to {ML} components},
+	abstract = {List of {ISO} 26262 techniques with applicability assessment for machine learning components},
+	author = {rsalay},
+	date = {2018-07-11},
+	note = {original-date: 2017-04-19T17:53:13Z}
+}
+
+@inproceedings{ruben_zilke_deepred_2016,
+	title = {{DeepRED} – Rule Extraction from Deep Neural Networks},
+	isbn = {978-3-319-46306-3},
+	doi = {10.1007/978-3-319-46307-0_29},
+	abstract = {Neural network classifiers are known to be able to learn very accurate models. In the recent past, researchers have even been able to train neural networks with multiple hidden layers (deep neural networks) more effectively and efficiently. However, the major downside of neural networks is that it is not trivial to understand the way how they derive their classification decisions. To solve this problem, there has been research on extracting better understandable rules from neural networks. However, most authors focus on nets with only one single hidden layer. The present paper introduces a new decompositional algorithm – {DeepRED} – that is able to extract rules from deep neural networks.
+The evaluation of the proposed algorithm shows its ability to outperform a pedagogical baseline on several tasks, including the successful extraction of rules from a neural network realizing the {XOR} function.},
+	pages = {457--473},
+	author = {Ruben Zilke, Jan and Loza Mencía, Eneldo and Janssen, Frederik},
+	date = {2016-10-19},
+	annotation = {{DeepRED} rule extraction for {DNNs}: Turn {DNN} into decision tree; quite inefficient; non-trivial to find correct algorithm parameters}
+}
+
+@article{tickle_truth_1998,
+	title = {The truth will come to light: directions and challenges in extracting the knowledge embedded within trained artificial neural networks},
+	volume = {9},
+	issn = {1045-9227},
+	doi = {10.1109/72.728352},
+	shorttitle = {The truth will come to light},
+	abstract = {To date, the preponderance of techniques for eliciting the knowledge embedded in trained artificial neural networks ({ANN}'s) has focused primarily on extracting rule-based explanations from feedforward {ANN}'s. The {ADT} taxonomy for categorizing such techniques was proposed in 1995 to provide a basis for the systematic comparison of the different approaches. This paper shows that not only is this taxonomy applicable to a cross section of current techniques for extracting rules from trained feedforward {ANN}'s but also how the taxonomy can be adapted and extended to embrace a broader range of {ANN} types (e.g., recurrent neural networks) and explanation structures. In addition the paper identifies some of the key research questions in extracting the knowledge embedded within {ANN}'s including the need for the formulation of a consistent theoretical basis for what has been, until recently, a disparate collection of empirical results.},
+	pages = {1057--1068},
+	number = {6},
+	journaltitle = {{IEEE} transactions on neural networks},
+	shortjournal = {{IEEE} Trans Neural Netw},
+	author = {Tickle, A. B. and Andrews, R. and Golea, M. and Diederich, J.},
+	date = {1998},
+	pmid = {18255792},
+	annotation = {Metrics and categorisation of Rule Extraction; key challenges}
+}
+
+@article{kendall_what_2017,
+	title = {What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?},
+	url = {http://arxiv.org/abs/1703.04977},
+	abstract = {There are two major types of uncertainty one can model. Aleatoric uncertainty captures noise inherent in the observations. On the other hand, epistemic uncertainty accounts for uncertainty in the model -- uncertainty which can be explained away given enough data. Traditionally it has been difficult to model epistemic uncertainty in computer vision, but with new Bayesian deep learning tools this is now possible. We study the benefits of modeling epistemic vs. aleatoric uncertainty in Bayesian deep learning models for vision tasks. For this we present a Bayesian deep learning framework combining input-dependent aleatoric uncertainty together with epistemic uncertainty. We study models under the framework with per-pixel semantic segmentation and depth regression tasks. Further, our explicit uncertainty formulation leads to new loss functions for these tasks, which can be interpreted as learned attenuation. This makes the loss more robust to noisy data, also giving new state-of-the-art results on segmentation and depth regression benchmarks.},
+	journaltitle = {{arXiv}:1703.04977 [cs]},
+	author = {Kendall, Alex and Gal, Yarin},
+	date = {2017-03-15},
+	eprinttype = {arxiv},
+	eprint = {1703.04977},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annotation = {Comment: {NIPS} 2017},
+	annotation = {New Loss function (from new uncertainty modelling): Dropout for uncertainty in model, pixel-wise uncertainty output (implemented as learned weight decay) for uncertainty in data}
+}
+
+@inproceedings{opitz_heuristically_1993,
+	title = {Heuristically Expanding Knowledge-Based Neural Networks},
+	abstract = {Knowledge-based neural networks are networks whose topology is determined by mapping the dependencies of a domain-specific rulebase into a neural network. However, existing network training methods lack the ability to add new rules to the (reformulated) rulebases. Thus, on domain theories that are lacking rules, generalization is poor, and training can corrupt the original rules, even those that were initially correct. We present {TopGen}, an extension to the  Kbann algorithm, that heuristically searches for possible expansions of a knowledge-based neural network, guided by the domain theory, the network, and the training data. It does this by dynamically adding hidden nodes to the neural representation of the domain theory, in a manner analogous to adding rules and conjuncts to the symbolic rulebase. Experiments indicate that our method is able to heuristically find effective places to add nodes to the knowledge-base network and verify that new nodes must be added in an intelligent mann...},
+	pages = {1360--1365},
+	booktitle = {In Proceedings of the Thirteenth International Joint Conference on Artificial Intelligence},
+	publisher = {Morgan Kaufmann},
+	author = {Opitz, David and Shavlik, Jude W.},
+	date = {1993},
+	annotation = {{TopGen}: Extension of {KBANN} which heuristically adds nodes in order to expand the learnable rules},
+	file = {Citeseer - Full Text PDF:C\:\\Users\\uidn4113\\Zotero\\storage\\2KLLXFWQ\\Opitz und Shavlik - 1993 - Heuristically Expanding Knowledge-Based Neural Net.pdf:application/pdf;Citeseer - Snapshot:C\:\\Users\\uidn4113\\Zotero\\storage\\RVALY8IW\\summary.html:text/html}
+}
+
+@inproceedings{damm_using_2018,
+	location = {Toulouse, France},
+	title = {Using Traffic Sequence Charts for the Development of {HAVs}},
+	abstract = {This paper proposes a visual, formal specification language for capturing such scenarios, and thus addresses key industrial needs for supporting scenario catalogue based acceptance testing for {HAVs}: 1. How can we at all capture the infinite number of possible traffic situations of an {HAV} in a finite catalogue with finitely represented scenarios? 2. How can we at the same time determine unambiguously whether a particular evolution of traffic situations is covered by a scenario? 3. How can we, thus, decide, whether the reaction of the vehicle-under-test in a given concrete traffic situations is compliant to the scenario catalogue (and thus derive test suites for acceptance testing from scenario catalogs)? 4. How can we assess, whether all possible traffic situations are covered by scenarios? This paper provides answers to challenges 1-3, and provides two necessarily incomplete, complementary proposals of how to deal with challenge 4. Challenge 1 is addressed by proposing a declarative specification language, where thus every individual chart determines via its formal semantics the infinite set of evolutions of an infinite set of initial traffic situations meeting the constraints on individual traffic situations and their evolution specified in a Traffic Sequence Chart ({TSC}). Each additional chart thus adds further constraints. {TSCs} observe entities defined in an ontology of the categories of all types of artifacts which must be observable in real traffic situations currently developed within the {OpenSCENARIO} initiative of {OEMs} and Tier1 suppliers. A formal dense time world model implements the entities and types, thereby capturing all relevant physical phenomena of the real world. These include as well environmental conditions, such as status of road surface, aquaplaning, lighting conditions, and weather conditions, all influencing the perception and maneuvering capabilities of a {HAV}. Formally, {TSCs} have the expressiveness of a first-order real-time temporal logic, where first-order atoms specify individual traffic situations.},
+	eventtitle = {Embedded Real Time Software and Systems 2018},
+	booktitle = {Embedded Real Time Software and Systems - {ERTS}2018},
+	author = {Damm, Werner and Kemper, Stephanie and Möhlmann, Eike and Peikenkamp, Thomas and Rakow, Astrid},
+	date = {2018-02},
+	annotation = {submitted}
+}
+
+@article{fernandes_rational_2017,
+	title = {A Rational Agent Controlling an Autonomous Vehicle: Implementation and Formal Verification},
+	volume = {257},
+	issn = {2075-2180},
+	url = {http://arxiv.org/abs/1709.02557},
+	doi = {10.4204/EPTCS.257.5},
+	shorttitle = {A Rational Agent Controlling an Autonomous Vehicle},
+	abstract = {The development and deployment of Autonomous Vehicles ({AVs}) on our roads is not only realistic in the near future but can also bring significant benefits. In particular, it can potentially solve several problems relating to vehicles and traffic, for instance: (i) possible reduction of traffic congestion, with the consequence of improved fuel economy and reduced driver inactivity; (ii) possible reduction in the number of accidents, assuming that an {AV} can minimise the human errors that often cause traffic accidents; and (iii) increased ease of parking, especially when one considers the potential for shared {AVs}. In order to deploy an {AV} there are significant steps that must be completed in terms of hardware and software. As expected, software components play a key role in the complex {AV} system and so, at least for safety, we should assess the correctness of these components. In this paper, we are concerned with the high-level software component(s) responsible for the decisions in an {AV}. We intend to model an {AV} capable of navigation; obstacle avoidance; obstacle selection (when a crash is unavoidable) and vehicle recovery, etc, using a rational agent. To achieve this, we have established the following stages. First, the agent plans and actions have been implemented within the Gwendolen agent programming language. Second, we have built a simulated automotive environment in the Java language. Third, we have formally specified some of the required agent properties through {LTL} formulae, which are then formally verified with the {AJPF} verification tool. Finally, within the {MCAPL} framework (which comprises all the tools used in previous stages) we have obtained formal verification of our {AV} agent in terms of its specific behaviours. For example, the agent plans responsible for selecting an obstacle with low potential damage, instead of a higher damage obstacle (when possible) can be formally verified within {MCAPL}. We must emphasise that the major goal (of our present approach) lies in the formal verification of agent plans, rather than evaluating real-world applications. For this reason we utilised a simple matrix representation concerning the environment used by our agent.},
+	pages = {35--42},
+	journaltitle = {Electronic Proceedings in Theoretical Computer Science},
+	author = {Fernandes, Lucas E. R. and Custodio, Vinicius and Alves, Gleifer V. and Fisher, Michael},
+	date = {2017-09-07},
+	eprinttype = {arxiv},
+	eprint = {1709.02557},
+	keywords = {Computer Science - Logic in Computer Science, Computer Science - Multiagent Systems},
+	annotation = {Comment: In Proceedings {FVAV} 2017, {arXiv}:1709.02126},
+	annotation = {Exemplary verification of decision making {AD} component (rational agent); Tools: {MCAPL} Suite, agent in {GWENDOLIN} language, {AJPF} model checker for linear temporal-logic formulas; to be continued within {AVIA}-project}
+}
+
+@article{lygeros_controllers_1999,
+	title = {Controllers for reachability specifications for hybrid systems},
+	volume = {35},
+	doi = {10.1016/S0005-1098(98)00193-9},
+	abstract = {The problem of systematically synthesizing hybrid controllers which satisfy multiple control objectives is considered. We present a technique, based on the principles of optimal control, for determining the class of least restrictive controllers that satisfies the most important objective (which we refer to as safety). The system performance with respect to lower priority objectives (which we refer to as efficiency) can then be optimized within this class. We motivate our approach by showing how the proposed synthesis technique simplifies to well-known results from supervisory control and pursuit evasion games when restricted to purely discrete and purely continuous systems respectively. We then illustrate the application of this technique to two examples, one hybrid (the steam boiler benchmark problem), and one primarily continuous (a flight vehicle management system with discrete flight modes). ( 1999 Elsevier Science Ltd. All rights reserved.},
+	pages = {349--370},
+	journaltitle = {Automatica},
+	author = {Lygeros, John and Tomlin, Claire J. and Sastry, S. Shankar},
+	date = {1999},
+	keywords = {Algorithmic efficiency, Benchmark (computing), Controllers, Evasion (network security), Hybrid system, Optimal control, Pursuit-evasion, Reachability, Specification},
+	annotation = {Given restrictions on state space, one can always construct controller (e.g. {RL} algorithm) staying in that bound; Possible construction of such; For examples of restrictions on state space see e.g. "On a Formal Model of Safe and Scalable Self-driving Cars" (not specifiable from image only input)}
+}
+
+@inproceedings{alexander_state_2018,
+	title = {The State of Solutions for Autonomous Systems Safety},
+	url = {http://eprints.whiterose.ac.uk/127573/},
+	abstract = {Autonomous Systems are seeing increasing use and increasingly safety-significant application. Consequently, the safety of autonomous systems is an important topic. To reflect this importance the Safety Critical Systems Club ({SCSC}) has established the Safety of Autonomous Systems Working Group ({SASWG}). This paper introduces the {SASWG} and describes (and justifies) the approach it is taking. A running example is used to illustrate challenges, which are organised against three “difficulty horizons”. Potential solutions to some of the challenges are outlined; possible research directions are suggested for other challenges. Some proposed but invalid solutions are also identified. Overall, whilst the {SASWG} acknowledges the very significant benefits that could accrue from autonomous systems, it believes their development and implementation should be pursued carefully and thoughtfully.},
+	publisher = {York},
+	author = {Alexander, Robert David and Ashmore, Rob and Banks, Andrew},
+	date = {2018-02-06},
+	langid = {english},
+	annotation = {Initial work group orientation statement: Some problems, categorised by solvability, and some infeasible solutions (e.g. "proven by use"); Main orientation: rather understand requirements than propose assurance mechanisms and life-cycle},
+	file = {Full Text PDF:C\:\\Users\\uidn4113\\Zotero\\storage\\3C9WVWW8\\Alexander et al. - 2018 - The State of Solutions for Autonomous Systems Safe.pdf:application/pdf;Snapshot:C\:\\Users\\uidn4113\\Zotero\\storage\\G94M3Z4V\\127573.html:text/html}
+}
+
+@inproceedings{johnson_increasing_2017,
+	title = {The Increasing Risks of Risk Assessment : On the Rise of Artificial Intelligence and {NonDeterminism} in Safety-Critical Systems},
+	shorttitle = {The Increasing Risks of Risk Assessment},
+	abstract = {Risk assessment plays a key role in Safety Management Systems. For more than forty years, likelihood and consequence have been used to guide the allocation of finite resources. Standards, such as {IEC}61508 and the {DO}-178 series, extended these concepts to support the development of software related systems. Human reliability analysis developed risk assessment techniques to represent and reason about operator ‘error’ and management failure. However, new challenges raise questions about the utility of traditional approaches to the development of safety-critical systems. The introduction of artificial intelligence within autonomous systems makes it hard to reason about the probability and consequences of adverse events when control applications must use previous training sets to guide their response to novel situations. This paper struggles to retain the foundations of risk assessment as a tool for safety engineering in the face of these new challenges for the development of safety-critical applications.},
+	author = {Johnson, Chris W.},
+	date = {2017},
+	keywords = {Artificial intelligence, Autonomous system (Internet), Human reliability, Management system, Risk assessment, Safety engineering},
+	annotation = {Rough historic derivation of problems with {AI}; Checks problems with using inductive or deductive methods, as well as with 'proven by use' approach}
+}
+
+@article{youcheng_concolic_2018,
+	title = {Concolic Testing for Deep Neural Networks},
+	url = {http://arxiv.org/abs/1805.00089},
+	series = {abs/1805.00089},
+	abstract = {Concolic testing combines program execution and symbolic analysis to explore the execution paths of a software program. This paper presents the first concolic testing approach for Deep Neural Networks ({DNNs}). More specifically, we formalise coverage criteria for {DNNs} that have been studied in the literature, and then develop a coherent method for performing concolic testing to increase test coverage. Our experimental results show the effectiveness of the concolic testing approach in both achieving high coverage and finding adversarial examples.},
+	journaltitle = {{arXiv}:1805.00089 [cs, stat]},
+	shortjournal = {{CoRR}},
+	author = {Youcheng, Sun and Wu, Min and Ruan, Wenjie and Huang, Xiaowei and Kwiatkowska, Marta and Kroening, Daniel},
+	date = {2018},
+	annotation = {Coverage oriented test case generation and robustness checking framework with guarantees for {ReLU}-only classification {DNNs} (more generic {DeepXplore}); test cases are generated to be close to given labeled samples; robustness is defined as not changing labels; defines and uses a variety of coverage criteria: Lipschitz (find counterexamples for given Lipschitz constant), Neuron/Neuron Boundary (find samples activating/activating in certain boundary given neurons), {SSC} (find samples emphasizing importance of a connection)}
+}
+
+@article{amodei_concrete_2016,
+	title = {Concrete Problems in {AI} Safety},
+	url = {http://arxiv.org/abs/1606.06565},
+	abstract = {Rapid progress in machine learning and artificial intelligence ({AI}) has brought increasing attention to the potential impacts of {AI} technologies on society. In this paper we discuss one such potential impact: the problem of accidents in machine learning systems, defined as unintended and harmful behavior that may emerge from poor design of real-world {AI} systems. We present a list of five practical research problems related to accident risk, categorized according to whether the problem originates from having the wrong objective function ("avoiding side effects" and "avoiding reward hacking"), an objective function that is too expensive to evaluate frequently ("scalable supervision"), or undesirable behavior during the learning process ("safe exploration" and "distributional shift"). We review previous work in these areas as well as suggesting research directions with a focus on relevance to cutting-edge {AI} systems. Finally, we consider the high-level question of how to think most productively about the safety of forward-looking applications of {AI}.},
+	journaltitle = {{arXiv}:1606.06565 [cs]},
+	author = {Amodei, Dario and Olah, Chris and Steinhardt, Jacob and Christiano, Paul and Schulman, John and Mané, Dan},
+	date = {2016-06-21},
+	eprinttype = {arxiv},
+	eprint = {1606.06565},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	annotation = {Comment: 29 pages},
+	annotation = {General open questions regarding safety/reliability of {AI} (mainly {RL}) with list of possible approaches}
+}
+
+@article{weller_concrete_2017,
+	title = {Concrete Problems for Autonomous Vehicle Safety: Advantages of Bayesian Deep Learning},
+	url = {https://www.ijcai.org/proceedings/2017/661},
+	shorttitle = {Concrete Problems for Autonomous Vehicle Safety},
+	abstract = {Electronic proceedings of {IJCAI} 2017},
+	pages = {4745--4753},
+	author = {Weller, Adrian and Cipolla, Roberto and {McAllister}, Rowan and Gal, Yarin and Wilk, Mark van der and Kendall, Alex and Shah, Amar},
+	date = {2017},
+	annotation = {Suggests to propagate, monitor, and use uncertainty through the component pipeline; {AV} task classification: scene understanding, scene prediction, decision (last two best coupled, e.g. end-to-end);}
+}
+
+@article{xiang_verification_2018,
+	title = {Verification for Machine Learning, Autonomy, and Neural Networks Survey},
+	url = {http://arxiv.org/abs/1810.01989},
+	abstract = {This survey presents an overview of verification techniques for autonomous systems, with a focus on safety-critical autonomous cyber-physical systems ({CPS}) and subcomponents thereof. Autonomy in {CPS} is enabling by recent advances in artificial intelligence ({AI}) and machine learning ({ML}) through approaches such as deep neural networks ({DNNs}), embedded in so-called learning enabled components ({LECs}) that accomplish tasks from classification to control. Recently, the formal methods and formal verification community has developed methods to characterize behaviors in these {LECs} with eventual goals of formally verifying specifications for {LECs}, and this article presents a survey of many of these recent approaches.},
+	journaltitle = {{arXiv}:1810.01989 [cs]},
+	author = {Xiang, Weiming and Musau, Patrick and Wild, Ayana A. and Lopez, Diego Manzanas and Hamilton, Nathaniel and Yang, Xiaodong and Rosenfeld, Joel and Johnson, Taylor T.},
+	date = {2018-10-03},
+	eprinttype = {arxiv},
+	eprint = {1810.01989},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	annotation = {Rather unsorted list of topic related papers with summaries; nice list of verification tooling in the end; rather focused on control tasks}
+}
+
+@inproceedings{voget_consistent_2018,
+	location = {Toulouse, France},
+	title = {A consistent safety case argumentation for artificial intelligence in safety related automotive systems},
+	url = {https://www.erts2018.org/uploads/program/ERTS_2018_paper_13.pdf},
+	abstract = {Regarding the actual automotive safety norms the use of artificial intelligence ({AI}) in safety critical environments like autonomous driving is not possible. This paper introduces a new conceptual safety modelling approach and a safety argumentation to certify {AI} algorithms in a safety related context. Therefore, a model of an {AI}-system is presented first. Afterwards, methods and safety argumentation are applied to the model, whereas it is limited to a specific subset of {AI}-systems, i.e. off-board learning deterministic neural networks in this case. Other cases are left over for future research. The result is a consistent safety analysis approach that applies state of the art safety argumentations from other domains to the automotive domain. This will enforce the adaptation of the functional safety norm {ISO}26262 to enable general {AI} methods in safety critical systems in future.},
+	eventtitle = {{ERTS} 2018},
+	author = {Voget, Stefan and Rudolph, Alexander and Mottok, Jürgen},
+	date = {2018-01-31},
+	annotation = {{GSN} approach to safety case argumentation of offline {AI}-methods; nice list of safety measures; task classification model based on human behavior modelling: knowledge-based, rule-based, skill-based}
+}
+
+@article{kim_interpretable_2017,
+	title = {Interpretable Learning for Self-Driving Cars by Visualizing Causal Attention},
+	url = {http://arxiv.org/abs/1703.10631},
+	abstract = {Deep neural perception and control networks are likely to be a key component of self-driving vehicles. These models need to be explainable - they should provide easy-to-interpret rationales for their behavior - so that passengers, insurance companies, law enforcement, developers etc., can understand what triggered a particular behavior. Here we explore the use of visual explanations. These explanations take the form of real-time highlighted regions of an image that causally influence the network's output (steering control). Our approach is two-stage. In the first stage, we use a visual attention model to train a convolution network end-to-end from images to steering angle. The attention model highlights image regions that potentially influence the network's output. Some of these are true influences, but some are spurious. We then apply a causal filtering step to determine which input regions actually influence the output. This produces more succinct visual explanations and more accurately exposes the network's behavior. We demonstrate the effectiveness of our model on three datasets totaling 16 hours of driving. We first show that training with attention does not degrade the performance of the end-to-end network. Then we show that the network causally cues on a variety of features that are used by humans while driving.},
+	journaltitle = {{arXiv}:1703.10631 [cs]},
+	author = {Kim, Jinkyu and Canny, John},
+	date = {2017-03-30},
+	eprinttype = {arxiv},
+	eprint = {1703.10631},
+	keywords = {Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition},
+	annotation = {Successful online learned visual attention heatmapping for an end-to-end approach; Setup: 1) Feature extraction ({CNN}) 2) {LSTM} or {FCNN} for parallel Visual Attention filter (learned attention weights for the features) and behaviour decision 3) cluster features by attention weight (taking temporal resolution into account) and produce heatmap; Results: no loss of accuracy}
+}
+
+@article{fuchs_neural_2018,
+	title = {Neural Stethoscopes: Unifying Analytic, Auxiliary and Adversarial Network Probing},
+	url = {http://arxiv.org/abs/1806.05502},
+	shorttitle = {Neural Stethoscopes},
+	abstract = {Model interpretability and systematic, targeted model adaptation present central tenets in machine learning for addressing limited or biased datasets. In this paper, we introduce neural stethoscopes as a framework for quantifying the degree of importance of specific factors of influence in deep networks as well as for actively promoting and suppressing information as appropriate. In doing so we unify concepts from multitask learning as well as training with auxiliary and adversarial losses. We showcase the efficacy of neural stethoscopes in an intuitive physics domain. Specifically, we investigate the challenge of visually predicting stability of block towers and demonstrate that the network uses visual cues which makes it susceptible to biases in the dataset. Through the use of stethoscopes we interrogate the accessibility of specific information throughout the network stack and show that we are able to actively de-bias network predictions as well as enhance performance via suitable auxiliary and adversarial stethoscope losses.},
+	journaltitle = {{arXiv}:1806.05502 [cs, stat]},
+	author = {Fuchs, Fabian B. and Groth, Oliver and Kosiorek, Adam R. and Bewley, Alex and Wulfmeier, Markus and Vedaldi, Andrea and Posner, Ingmar},
+	date = {2018-06-14},
+	eprinttype = {arxiv},
+	eprint = {1806.05502},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Computer Vision and Pattern Recognition},
+	annotation = {Analysis/Modification method to see/decrease/increase the influence of subtasks: Design a small {NN} model (stethoscope) with attaching mechanism, and uniformly attach instances at every/selected layers, then train them for a specific subtask (with or without modifying main {NN}); Formats: Analysis (simply see, at what layer the abstraction is best for which subtask), Auxiliary/Adversarial (train main {NN} together with stethoscopes, promoting/penalizing abstraction good for subtask)}
+}
+
+@article{kim_textual_2018,
+	title = {Textual Explanations for Self-Driving Vehicles},
+	url = {http://arxiv.org/abs/1807.11546},
+	abstract = {Deep neural perception and control networks have become key components of self-driving vehicles. User acceptance is likely to benefit from easy-to-interpret textual explanations which allow end-users to understand what triggered a particular behavior. Explanations may be triggered by the neural controller, namely introspective explanations, or informed by the neural controller's output, namely rationalizations. We propose a new approach to introspective explanations which consists of two parts. First, we use a visual (spatial) attention model to train a convolutional network end-to-end from images to the vehicle control commands, i.e., acceleration and change of course. The controller's attention identifies image regions that potentially influence the network's output. Second, we use an attention-based video-to-text model to produce textual explanations of model actions. The attention maps of controller and explanation model are aligned so that explanations are grounded in the parts of the scene that mattered to the controller. We explore two approaches to attention alignment, strong- and weak-alignment. Finally, we explore a version of our model that generates rationalizations, and compare with introspective explanations on the same video segments. We evaluate these models on a novel driving dataset with ground-truth human explanations, the Berkeley {DeepDrive} {eXplanation} ({BDD}-X) dataset. Code is available at https://github.com/{JinkyuKimUCB}/explainable-deep-driving.},
+	journaltitle = {{arXiv}:1807.11546 [cs]},
+	author = {Kim, Jinkyu and Rohrbach, Anna and Darrell, Trevor and Canny, John and Akata, Zeynep},
+	date = {2018-07-30},
+	eprinttype = {arxiv},
+	eprint = {1807.11546},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annotation = {Comment: Accepted to {ECCV} 2018},
+	annotation = {Extension of "Interpretable Learning for Self-Driving Cars by Visualizing Causal Attention" by textual explanations; explanations are either introspection (use model causality) or rationalisation (guess causality); different concepts of how to align text with model causality (=attention): use same attention map, use own attention map and penalize deviation, do not use (=rationalization); tension between sparsity of description and performance; Berkeley Deep Drive {eXplanation} Dataset}
+}
+
+@article{zhang_visual_2018,
+	title = {Visual Interpretability for Deep Learning: a Survey},
+	url = {http://arxiv.org/abs/1802.00614},
+	shorttitle = {Visual Interpretability for Deep Learning},
+	abstract = {This paper reviews recent studies in understanding neural-network representations and learning neural networks with interpretable/disentangled middle-layer representations. Although deep neural networks have exhibited superior performance in various tasks, the interpretability is always the Achilles' heel of deep neural networks. At present, deep neural networks obtain high discrimination power at the cost of low interpretability of their black-box representations. We believe that high model interpretability may help people to break several bottlenecks of deep learning, e.g., learning from very few annotations, learning via human-computer communications at the semantic level, and semantically debugging network representations. We focus on convolutional neural networks ({CNNs}), and we revisit the visualization of {CNN} representations, methods of diagnosing representations of pre-trained {CNNs}, approaches for disentangling pre-trained {CNN} representations, learning of {CNNs} with disentangled representations, and middle-to-end learning based on model interpretability. Finally, we discuss prospective trends in explainable artificial intelligence.},
+	journaltitle = {{arXiv}:1802.00614 [cs]},
+	author = {Zhang, Quanshi and Zhu, Song-Chun},
+	date = {2018-02-02},
+	eprinttype = {arxiv},
+	eprint = {1802.00614},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annotation = {Visual analysis methods for {ConvNets}}
+}
+
+@article{ribeiro_why_2016,
+	title = {"Why Should I Trust You?": Explaining the Predictions of Any Classifier},
+	url = {http://arxiv.org/abs/1602.04938},
+	shorttitle = {"Why Should I Trust You?},
+	abstract = {Despite widespread adoption, machine learning models remain mostly black boxes. Understanding the reasons behind predictions is, however, quite important in assessing trust, which is fundamental if one plans to take action based on a prediction, or when choosing whether to deploy a new model. Such understanding also provides insights into the model, which can be used to transform an untrustworthy model or prediction into a trustworthy one. In this work, we propose {LIME}, a novel explanation technique that explains the predictions of any classifier in an interpretable and faithful manner, by learning an interpretable model locally around the prediction. We also propose a method to explain models by presenting representative individual predictions and their explanations in a non-redundant way, framing the task as a submodular optimization problem. We demonstrate the flexibility of these methods by explaining different models for text (e.g. random forests) and image classification (e.g. neural networks). We show the utility of explanations via novel experiments, both simulated and with human subjects, on various scenarios that require trust: deciding if one should trust a prediction, choosing between models, improving an untrustworthy classifier, and identifying why a classifier should not be trusted.},
+	journaltitle = {{arXiv}:1602.04938 [cs, stat]},
+	author = {Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos},
+	date = {2016-02-16},
+	eprinttype = {arxiv},
+	eprint = {1602.04938},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	annotation = {{LIME}: Section-wise heatmapping for black-box models by local approximation through linear model}
+}
+
+@article{samek_explainable_2017,
+	title = {Explainable Artificial Intelligence: Understanding, Visualizing and Interpreting Deep Learning Models},
+	url = {http://arxiv.org/abs/1708.08296},
+	shorttitle = {Explainable Artificial Intelligence},
+	abstract = {With the availability of large databases and recent improvements in deep learning methodology, the performance of {AI} systems is reaching or even exceeding the human level on an increasing number of complex tasks. Impressive examples of this development can be found in domains such as image classification, sentiment analysis, speech understanding or strategic game playing. However, because of their nested non-linear structure, these highly successful machine learning and artificial intelligence models are usually applied in a black box manner, i.e., no information is provided about what exactly makes them arrive at their predictions. Since this lack of transparency can be a major drawback, e.g., in medical applications, the development of methods for visualizing, explaining and interpreting deep learning models has recently attracted increasing attention. This paper summarizes recent developments in this field and makes a plea for more interpretability in artificial intelligence. Furthermore, it presents two approaches to explaining predictions of deep learning models, one method which computes the sensitivity of the prediction with respect to changes in the input and one approach which meaningfully decomposes the decision in terms of the input variables. These methods are evaluated on three classification tasks.},
+	journaltitle = {{arXiv}:1708.08296 [cs, stat]},
+	author = {Samek, Wojciech and Wiegand, Thomas and Müller, Klaus-Robert},
+	date = {2017-08-28},
+	eprinttype = {arxiv},
+	eprint = {1708.08296},
+	keywords = {Computer Science - Artificial Intelligence, Statistics - Machine Learning, Computer Science - Neural and Evolutionary Computing, Computer Science - Computers and Society},
+	annotation = {Comment: 8 pages, 2 figures},
+	annotation = {Two examples for {XAI} heatmapping: Sentiment analysis, {LRP}; Metric for quality of heatmapping method}
+}
+
+@article{chen_learning_2018,
+	title = {Learning to Explain: An Information-Theoretic Perspective on Model Interpretation},
+	url = {http://arxiv.org/abs/1802.07814},
+	shorttitle = {Learning to Explain},
+	abstract = {We introduce instancewise feature selection as a methodology for model interpretation. Our method is based on learning a function to extract a subset of features that are most informative for each given example. This feature selector is trained to maximize the mutual information between selected features and the response variable, where the conditional distribution of the response variable given the input is the model to be explained. We develop an efficient variational approximation to the mutual information, and show the effectiveness of our method on a variety of synthetic and real data sets using both quantitative metrics and human evaluation.},
+	journaltitle = {{arXiv}:1802.07814 [cs, stat]},
+	author = {Chen, Jianbo and Song, Le and Wainwright, Martin J. and Jordan, Michael I.},
+	date = {2018-02-21},
+	eprinttype = {arxiv},
+	eprint = {1802.07814},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	annotation = {Comment: Accepted to {ICML} 2018 as a long oral},
+	annotation = {Instancewise feature selection: black-box heatmapping method (described for classification); globally learn a k-explainer, that is a mapping of a network prediction to a selection of k relevant features, i.e. features that share the highest mutual information with the output locally around that instance; do this roughly by learning a distribution family of the outputs, whose expectation value directly gives the best explainer; results: possibly slow to learn, but inference (i.e. explanations) is fast (only one pass through the learned {NN})}
+}
+
+@article{petsiuk_rise:_2018,
+	title = {{RISE}: Randomized Input Sampling for Explanation of Black-box Models},
+	url = {https://arxiv.org/abs/1806.07421},
+	shorttitle = {{RISE}},
+	author = {Petsiuk, Vitali and Das, Abir and Saenko, Kate},
+	date = {2018-06-19},
+	langid = {english},
+	annotation = {Efficiently gain pixel-wise saliency map from black-box model}
+}
+
+@thesis{weitz_applying_2018,
+	location = {Bamberg},
+	title = {Applying Explainable Artiﬁcial Intelligence for Deep Learning Networks to Decode Facial Expressions of Pain and Emotions},
+	url = {http://www.cogsys.wiai.uni-bamberg.de/theses/weitz/Masterarbeit_Weitz.pdf},
+	abstract = {Deep learning networks are successfully used for object and face recognition in images and videos. In order to be able to apply such networks in practice, for example in hospitals as a pain recognition tool, the current procedures are only suitable to a limited extent. The advantage of deep learning methods is that they can learn complex non-linear relationships between raw data and target classes without limiting themselves to a set of hand-crafted features provided by humans. However, the disadvantage is that due to the complexity of these networks, it is not possible to interpret the knowledge that is stored inside the network. It is a black-box learning procedure. Explainable Artiﬁcial Intelligence ({XAI}) approaches mitigate this problem by extracting explanations for decisions and representing them in a human-interpretable form. The aim of this master’s thesis is to investigate different {XAI} methods and apply them to explain how a deep learning network distinguishes facial expressions of pain from facial expressions of emotions such as happiness and disgust. The results show that the {CNN} has problems to distinguish between pain and happiness. By the usage of {XAI} it can be shown that the {CNN} discovers features for happiness in painful images, when the person shows no typical pain related facial expressions. Furthermore, the results show that the learned features of the network are dataset-independent. It can be concluded that model-speciﬁc {XAI} approaches seem to be a promising base to make the learned features visible for humans. This is on the one hand the ﬁrst step to improve {CNNs} and on the other hand, to increase the comprehensibility of such black box systems.},
+	institution = {Otto-Friedrich-University Bamberg},
+	type = {phdthesis},
+	author = {Weitz, Katharina},
+	date = {2018},
+	annotation = {[Master Thesis] Nice list of heatmapping methods and comparison (for pain detection): Deconvnet, Backpropagation, Guided Backpropagation, Grad-{CAM}, Guided Grad-{CAM}, {LRP}, {LIME}}
+}
+
+@article{bach_pixel-wise_2015,
+	title = {On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-Wise Relevance Propagation},
+	volume = {10},
+	issn = {1932-6203},
+	url = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130140},
+	doi = {10.1371/journal.pone.0130140},
+	abstract = {Understanding and interpreting classification decisions of automated image classification systems is of high value in many applications, as it allows to verify the reasoning of the system and provides additional information to the human expert. Although machine learning methods are solving very successfully a plethora of tasks, they have in most cases the disadvantage of acting as a black box, not providing any information about what made them arrive at a particular decision. This work proposes a general solution to the problem of understanding classification decisions by pixel-wise decomposition of nonlinear classifiers. We introduce a methodology that allows to visualize the contributions of single pixels to predictions for kernel-based classifiers over Bag of Words features and for multilayered neural networks. These pixel contributions can be visualized as heatmaps and are provided to a human expert who can intuitively not only verify the validity of the classification decision, but also focus further analysis on regions of potential interest. We evaluate our method for classifiers trained on {PASCAL} {VOC} 2009 images, synthetic image data containing geometric shapes, the {MNIST} handwritten digits data set and for the pre-trained {ImageNet} model available as part of the Caffe open source package.},
+	pages = {e0130140},
+	number = {7},
+	journaltitle = {{PLOS} {ONE}},
+	shortjournal = {{PLOS} {ONE}},
+	author = {Bach, Sebastian and Binder, Alexander and Montavon, Grégoire and Klauschen, Frederick and Müller, Klaus-Robert and Samek, Wojciech},
+	date = {2015-07-10},
+	langid = {english},
+	keywords = {Algorithms, Coding mechanisms, Imaging techniques, Kernel functions, Kernel methods, Neural networks, Neurons, Vision},
+	annotation = {{LRP}: Heatmapping method; sort of deep taylor decomposition}
+}
+
+@article{abbasi-asl_interpreting_2017,
+	title = {Interpreting Convolutional Neural Networks Through Compression},
+	url = {http://arxiv.org/abs/1711.02329},
+	abstract = {Convolutional neural networks ({CNNs}) achieve state-of-the-art performance in a wide variety of tasks in computer vision. However, interpreting {CNNs} still remains a challenge. This is mainly due to the large number of parameters in these networks. Here, we investigate the role of compression and particularly pruning filters in the interpretation of {CNNs}. We exploit our recently-proposed greedy structural compression scheme that prunes filters in a trained {CNN}. In our compression, the filter importance index is defined as the classification accuracy reduction ({CAR}) of the network after pruning that filter. The filters are then iteratively pruned based on the {CAR} index. We demonstrate the interpretability of {CAR}-compressed {CNNs} by showing that our algorithm prunes filters with visually redundant pattern selectivity. Specifically, we show the importance of shape-selective filters for object recognition, as opposed to color-selective filters. Out of top 20 {CAR}-pruned filters in {AlexNet}, 17 of them in the first layer and 14 of them in the second layer are color-selective filters. Finally, we introduce a variant of our {CAR} importance index that quantifies the importance of each image class to each {CNN} filter. We show that the most and the least important class labels present a meaningful interpretation of each filter that is consistent with the visualized pattern selectivity of that filter.},
+	journaltitle = {{arXiv}:1711.02329 [cs, stat]},
+	author = {Abbasi-Asl, Reza and Yu, Bin},
+	date = {2017-11-07},
+	eprinttype = {arxiv},
+	eprint = {1711.02329},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Computer Vision and Pattern Recognition},
+	annotation = {{CAR}-compression for classification {CNNs} prunes redundant filters; {CAR} compression: prune filters with least effect on accuracy, retrain, repeat (see "Structural Compression of Convolutional Neural Networks Based on Greedy Filter Pruning")},
+	annotation = {Comment: Presented at {NIPS} 2017 Symposium on Interpretable Machine Learning},
+	file = {arXiv\:1711.02329 PDF:C\:\\Users\\uidn4113\\Zotero\\storage\\JHGM2IMW\\Abbasi-Asl und Yu - 2017 - Interpreting Convolutional Neural Networks Through.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\uidn4113\\Zotero\\storage\\VTVXTA79\\1711.html:text/html}
+}
+
+@article{gast_lightweight_2018,
+	title = {Lightweight Probabilistic Deep Networks},
+	url = {http://arxiv.org/abs/1805.11327},
+	abstract = {Even though probabilistic treatments of neural networks have a long history, they have not found widespread use in practice. Sampling approaches are often too slow already for simple networks. The size of the inputs and the depth of typical {CNN} architectures in computer vision only compound this problem. Uncertainty in neural networks has thus been largely ignored in practice, despite the fact that it may provide important information about the reliability of predictions and the inner workings of the network. In this paper, we introduce two lightweight approaches to making supervised learning with probabilistic deep networks practical: First, we suggest probabilistic output layers for classification and regression that require only minimal changes to existing networks. Second, we employ assumed density filtering and show that activation uncertainties can be propagated in a practical fashion through the entire network, again with minor changes. Both probabilistic networks retain the predictive power of the deterministic counterpart, but yield uncertainties that correlate well with the empirical error induced by their predictions. Moreover, the robustness to adversarial examples is significantly increased.},
+	journaltitle = {{arXiv}:1805.11327 [cs, stat]},
+	author = {Gast, Jochen and Roth, Stefan},
+	date = {2018-05-29},
+	eprinttype = {arxiv},
+	eprint = {1805.11327},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Computer Vision and Pattern Recognition},
+	annotation = {Comment: To appear at {CVPR} 2018},
+	annotation = {Small network adaption to additionally predict uncertainty of prediction/activations for feedforward {DNNs} and many common layers (predict probability distribution parameters instead of direct output); needs new loss and new backpropagation; efficient, increases robustness},
+	file = {arXiv\:1805.11327 PDF:C\:\\Users\\uidn4113\\Zotero\\storage\\D37ADPDQ\\Gast und Roth - 2018 - Lightweight Probabilistic Deep Networks.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\uidn4113\\Zotero\\storage\\J5XJ4FEJ\\1805.html:text/html}
+}
+
+@article{andreas_learning_2017,
+	title = {Learning with Latent Language},
+	url = {http://arxiv.org/abs/1711.00482},
+	abstract = {The named concepts and compositional operators present in natural language provide a rich source of information about the kinds of abstractions humans use to navigate the world. Can this linguistic background knowledge improve the generality and efficiency of learned classifiers and control policies? This paper aims to show that using the space of natural language strings as a parameter space is an effective way to capture natural task structure. In a pretraining phase, we learn a language interpretation model that transforms inputs (e.g. images) into outputs (e.g. labels) given natural language descriptions. To learn a new concept (e.g. a classifier), we search directly in the space of descriptions to minimize the interpreter's loss on training examples. Crucially, our models do not require language data to learn these concepts: language is used only in pretraining to impose structure on subsequent learning. Results on image classification, text editing, and reinforcement learning show that, in all settings, models with a linguistic parameterization outperform those without.},
+	journaltitle = {{arXiv}:1711.00482 [cs]},
+	author = {Andreas, Jacob and Klein, Dan and Levine, Sergey},
+	date = {2017-11-01},
+	eprinttype = {arxiv},
+	eprint = {1711.00482},
+	keywords = {Computer Science - Computation and Language, Computer Science - Neural and Evolutionary Computing},
+	annotation = {L3: Multi-task framework for simple few-shot problems based on prelearning a natural language interpreter; Better introspection due to intermediate {NL} concept description; 1) Prelearning: learn {NL} interpreter (i.e. mapping f: (description, x)-{\textgreater}y) with additional {NL} description labels 2) Concept-Learning: find description with which {NL} interpreter f(description,-) performs best on given (x,y)-samples 3) Evaluation: apply f(description,-); Use of standard {RNN} encoder-decoder models for handling of {NL} desscriptions; possibly inefficient for large concept-learning data set/complicated concept; advertises {NL} instead of formal languages: More available data, richer semantics},
+	file = {arXiv\:1711.00482 PDF:C\:\\Users\\uidn4113\\Zotero\\storage\\PYE992J7\\Andreas et al. - 2017 - Learning with Latent Language.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\uidn4113\\Zotero\\storage\\6GKPX9ZE\\1711.html:text/html}
+}
+
+@article{wang_formal_2018,
+	title = {Formal Security Analysis of Neural Networks using Symbolic Intervals},
+	url = {https://arxiv.org/abs/1804.10829},
+	abstract = {Due to the increasing deployment of Deep Neural Networks ({DNNs}) in real-world security-critical domains including autonomous vehicles and collision avoidance systems, formally checking security properties of {DNNs}, especially under different attacker capabilities, is becoming crucial. Most existing security testing techniques for {DNNs} try to find adversarial examples without providing any formal security guarantees about the non-existence of such adversarial examples. Recently, several projects have used different types of Satisfiability Modulo Theory ({SMT}) solvers to formally check security properties of {DNNs}. However, all of these approaches are limited by the high overhead caused by the solver. 
+In this paper, we present a new direction for formally checking security properties of {DNNs} without using {SMT} solvers. Instead, we leverage interval arithmetic to compute rigorous bounds on the {DNN} outputs. Our approach, unlike existing solver-based approaches, is easily parallelizable. We further present symbolic interval analysis along with several other optimizations to minimize overestimations of output bounds. 
+We design, implement, and evaluate our approach as part of {ReluVal}, a system for formally checking security properties of Relu-based {DNNs}. Our extensive empirical results show that {ReluVal} outperforms Reluplex, a state-of-the-art solver-based system, by 200 times on average. On a single 8-core machine without {GPUs}, within 4 hours, {ReluVal} is able to verify a security property that Reluplex deemed inconclusive due to timeout after running for more than 5 days. Our experiments demonstrate that symbolic interval analysis is a promising new direction towards rigorously analyzing different security properties of {DNNs}.},
+	author = {Wang, Shiqi and Pei, Kexin and Whitehouse, Justin and Yang, Junfeng and Jana, Suman},
+	date = {2018-04-28},
+	langid = {english},
+	annotation = {{ReluVal}: Fast range analysis tool with guarantees for {ReLU}-only {DNNs} using interval arithmetic and some boundary tightening methods for boundary approximation}
+}
+
+@article{pei_towards_2017,
+	title = {Towards Practical Verification of Machine Learning: The Case of Computer Vision Systems},
+	url = {http://arxiv.org/abs/1712.01785},
+	shorttitle = {Towards Practical Verification of Machine Learning},
+	abstract = {Due to the increasing usage of machine learning ({ML}) techniques in security- and safety-critical domains, such as autonomous systems and medical diagnosis, ensuring correct behavior of {ML} systems, especially for different corner cases, is of growing importance. In this paper, we propose a generic framework for evaluating security and robustness of {ML} systems using different real-world safety properties. We further design, implement and evaluate {VeriVis}, a scalable methodology that can verify a diverse set of safety properties for state-of-the-art computer vision systems with only blackbox access. {VeriVis} leverage different input space reduction techniques for efficient verification of different safety properties. {VeriVis} is able to find thousands of safety violations in fifteen state-of-the-art computer vision systems including ten Deep Neural Networks ({DNNs}) such as Inception-v3 and Nvidia's Dave self-driving system with thousands of neurons as well as five commercial third-party vision {APIs} including Google vision and Clarifai for twelve different safety properties. Furthermore, {VeriVis} can successfully verify local safety properties, on average, for around 31.7\% of the test images. {VeriVis} finds up to 64.8x more violations than existing gradient-based methods that, unlike {VeriVis}, cannot ensure non-existence of any violations. Finally, we show that retraining using the safety violations detected by {VeriVis} can reduce the average number of violations up to 60.2\%.},
+	journaltitle = {{arXiv}:1712.01785 [cs]},
+	author = {Pei, Kexin and Cao, Yinzhi and Yang, Junfeng and Jana, Suman},
+	date = {2017-12-05},
+	eprinttype = {arxiv},
+	eprint = {1712.01785},
+	keywords = {Computer Science - Cryptography and Security, Computer Science - Computer Vision and Pattern Recognition},
+	annotation = {Comment: 16 pages, 11 tables, 11 figures},
+	annotation = {{VeriVis}: framework for exhaustive local robustness checks wrt. specific image transformations using discreteness of image input and search space reduction; lemma that state space increases polynomial, at most cubic, for chosen trafos and state space reduction; transformations e.g. brightness, contrast, rotation, smoothing, blurring; difference between internal state requirements and input-output requirements}
+}
+
+@inproceedings{pulina_abstraction-refinement_2010,
+	title = {An Abstraction-Refinement Approach to Verification of Artificial Neural Networks},
+	volume = {616},
+	doi = {10.1007/978-3-642-14295-6_24},
+	abstract = {A key problem in the adoption of artificial neural networks in safety-related applications is that misbehaviors can be hardly
+ruled out with traditional analytical or probabilistic techniques. In this paper we focus on specific networks known as Multi-Layer
+Perceptrons ({MLPs}), and we propose a solution to verify their safety using abstractions to Boolean combinations of linear
+arithmetic constraints. We show that our abstractions are consistent, i.e., whenever the abstract {MLP} is declared to be safe,
+the same holds for the concrete one. Spurious counterexamples, on the other hand, trigger refinements and can be leveraged
+to automate the correction of misbehaviors. We describe an implementation of our approach based on the {HySAT} solver, detailing the abstraction-refinement process and the automated correction strategy. Finally, we present experimental
+results confirming the feasibility of our approach on a realistic case study.},
+	eventtitle = {{CEUR} Workshop Proceedings},
+	pages = {243--257},
+	author = {Pulina, Luca and Tacchella, Armando},
+	date = {2010-07-15},
+	annotation = {{NeVer}: Range analysis framework for logistic function activations that peacewisely linearises the activations to a "consistent abstraction"; counterexamples only valid for the abstract model are suggested to help tightening the safety bound; maybe a predecessor of the {ReLU} activation}
+}
+
+@inproceedings{rabold_explaining_2018,
+	title = {Explaining Black-Box Classifiers with {ILP} – Empowering {LIME} with Aleph to Approximate Non-linear Decisions with Relational Rules},
+	isbn = {978-3-319-99960-9},
+	series = {Lecture Notes in Computer Science},
+	abstract = {We propose an adaption of the explanation-generating system {LIME}. While {LIME} relies on sparse linear models, we explore how richer explanations can be generated. As application domain we use images which consist of a coarse representation of ancient graves. The graves are divided into two classes and can be characterised by meaningful features and relations. This domain was generated in analogy to a classic concept acquisition domain researched in psychology. Like {LIME}, our approach draws samples around a simplified representation of the instance to be explained. The samples are labelled by a generator – simulating a black-box classifier trained on the images. In contrast to {LIME}, we feed this information to the {ILP} system Aleph. We customised Aleph’s evaluation function to take into account the similarity of instances. We applied our approach to generate explanations for different variants of the ancient graves domain. We show that our explanations can involve richer knowledge thereby going beyond the expressiveness of sparse linear models.},
+	pages = {105--117},
+	booktitle = {Inductive Logic Programming},
+	publisher = {Springer International Publishing},
+	author = {Rabold, Johannes and Siebers, Michael and Schmid, Ute},
+	editor = {Riguzzi, Fabrizio and Bellodi, Elena and Zese, Riccardo},
+	date = {2018},
+	langid = {english},
+	annotation = {{LIME} rule extraction instead of heatmapping; Given logical domain with background knowledge, and description of images, determine rules that describe the network's classification behaviour well for given example and close further samples; needs the (abstract) logical descriptions like position/size/...!}
+}
+
+@inproceedings{augasta_rule_2012,
+	title = {Rule extraction from neural networks – A comparative Study},
+	doi = {10.1109/ICPRIME.2012.6208380},
+	abstract = {Though neural networks have achieved highest
+classification accuracy for many classification problems, the
+obtained results may not be interpretable as they are often
+considered as black box. To overcome this drawback
+researchers have developed many rule extraction algorithms.
+This paper has discussed on various rule extraction algorithms
+based on three different rule extraction approaches namely
+decompositional, pedagogical and eclectic. Also it evaluates the
+performance of those approaches by comparing different
+algorithms with these three approaches on three real datasets
+namely Wisconsin breast cancer, Pima Indian diabetes and Iris
+plants.},
+	author = {Augasta, M.Gethsiyal and Kathirvalavakumar, T},
+	date = {2012-03-23},
+	annotation = {Nice list of rule extraction algorithms with categorisation}
+}
+
+@article{cristea_neural_2001,
+	title = {Neural Network Knowledge Extraction},
+	abstract = {The usage of {ANNs} in "safety-critical" domains, which include the economic and financial applications, is hindered by their "black box"- type approach, which makes it difficult to verify and debug software that includes {ANN} components. Significant advantages can be gained by combining the symbolic knowledge of a domain theory ({DT}), with the empirical sub-symbolic knowledge stored in an {ANN} trained on examples. Rule extraction adds the needed explanation/comprehension component to the much prized ability of {ANN} to generalise over a learned set of examples. Compiling rules into the an {ANN} provides better initial conditions for training the network and can significantly improve the speed of learning. The mixed approach allows building hybrid systems that co-operatively combine {ANN} and {AI} techniques, increasing both robustness and flexibility. The paper gives an overview of the bases of {ANN} knowledge extraction under the form of logical functions. {ANN} design relations are established. 1.},
+	author = {Cristea, Alexandra and P, Cristea and T, Okamoto},
+	date = {2001-12-30},
+	annotation = {2 rule extraction algorithms: {SUBSET} and M-of-N; corresponding rule insertion algorithm by description of local neuronal structure for several rules}
+}
+
+@article{davila_garcez_symbolic_2001,
+	title = {Symbolic knowledge extraction from trained neural networks: A sound approach},
+	volume = {125},
+	issn = {0004-3702},
+	url = {http://www.sciencedirect.com/science/article/pii/S0004370200000771},
+	doi = {10.1016/S0004-3702(00)00077-1},
+	shorttitle = {Symbolic knowledge extraction from trained neural networks},
+	abstract = {Although neural networks have shown very good performance in many application domains, one of their main drawbacks lies in the incapacity to provide an explanation for the underlying reasoning mechanisms. The “explanation capability” of neural networks can be achieved by the extraction of symbolic knowledge. In this paper, we present a new method of extraction that captures nonmonotonic rules encoded in the network, and prove that such a method is sound. We start by discussing some of the main problems of knowledge extraction methods. We then discuss how these problems may be ameliorated. To this end, a partial ordering on the set of input vectors of a network is defined, as well as a number of pruning and simplification rules. The pruning rules are then used to reduce the search space of the extraction algorithm during a pedagogical extraction, whereas the simplification rules are used to reduce the size of the extracted set of rules. We show that, in the case of regular networks, the extraction algorithm is sound and complete. We proceed to extend the extraction algorithm to the class of non-regular networks, the general case. We show that non-regular networks always contain regularities in their subnetworks. As a result, the underlying extraction method for regular networks can be applied, but now in a decompositional fashion. In order to combine the sets of rules extracted from each subnetwork into the final set of rules, we use a method whereby we are able to keep the soundness of the extraction algorithm. Finally, we present the results of an empirical analysis of the extraction system, using traditional examples and real-world application problems. The results have shown that a very high fidelity between the extracted set of rules and the network can be achieved.},
+	pages = {155--207},
+	number = {1},
+	journaltitle = {Artificial Intelligence},
+	shortjournal = {Artificial Intelligence},
+	author = {d'Avila Garcez, A. S and Broda, K and Gabbay, D. M},
+	date = {2001-01-01},
+	keywords = {Artificial neural networks, Neural-symbolic integration, Nonmonotonic reasoning, Rule extraction},
+	annotation = {Eclectic rule extraction and rule pruning from single hidden layer {NNs} and binary input vector (continuous not yet well solved); uses logical operator "default negation" that outputs if-then and M-of-N rules, and ordering on input vector subspace on regular parts of the {NN}; nice description of positive and negative properties of decompositional (output not equivalent to input) vs pedagogical approaches; Def. Complete and sound}
+}
+
+@article{setiono_symbolic_1996,
+	title = {Symbolic Representation of Neural Networks},
+	volume = {29},
+	doi = {10.1109/2.485895},
+	abstract = {Although backpropagation neural networks generally predict better than decision trees do for pattern classiication problems, they are often regarded as black boxes, i.e., their predictions cannot be explained as those of decision trees. In many applications, more often than not, explicit knowledge is needed by human experts. This work drives a symbolic representation for neural networks to make explicit each prediction of a neural network. An algorithm is proposed and implemented to extract symbolic rules from neural networks. Explicitness of the extracted rules is supported by comparing the symbolic rules generated by decision trees methods. Empirical study demonstrates that the proposed algorithm generates high quality rules from neural networks comparable with those of decision trees in terms of predictive accuracy, number of rules and average number of conditions for a rule. The symbolic rules from nerual networks preserve high predictive accuracy of original networks. An early and shorter version of this paper has been accepted for presentation at {IJCAI}'95.},
+	pages = {71--77},
+	journaltitle = {{IEEE} Computer},
+	author = {Setiono, Rudy and Liu, Huan},
+	date = {1996},
+	keywords = {Algorithm, Backpropagation, Black box, Decision tree, Display resolution, Neural Networks},
+	annotation = {Eclectic rule extraction and rule pruning from single hidden layer {NNs} and binary input vector (continuous not yet well solved); uses logical operator "default negation" that outputs if-then and M-of-N rules, and ordering on input vector subspace on regular parts of the {NN}; nice description of positive and negative properties of decompositional (output not equivalent to input) vs pedagogical approaches; Def. Complete and sound}
+}
+
+@article{wang_comparative_2018,
+	title = {A Comparative Study of Rule Extraction for Recurrent Neural Networks},
+	url = {http://arxiv.org/abs/1801.05420},
+	abstract = {Understanding recurrent networks through rule extraction has a long history. This has taken on new interests due to the need for interpreting or verifying neural networks. One basic form for representing stateful rules is deterministic finite automata ({DFA}). Previous research shows that extracting {DFAs} from trained second-order recurrent networks is not only possible but also relatively stable. Recently, several new types of recurrent networks with more complicated architectures have been introduced. These handle challenging learning tasks usually involving sequential data. However, it remains an open problem whether {DFAs} can be adequately extracted from these models. Specifically, it is not clear how {DFA} extraction will be affected when applied to different recurrent networks trained on data sets with different levels of complexity. Here, we investigate {DFA} extraction on several widely adopted recurrent networks that are trained to learn a set of seven regular Tomita grammars. We first formally analyze the complexity of Tomita grammars and categorize these grammars according to that complexity. Then we empirically evaluate different recurrent networks for their performance of {DFA} extraction on all Tomita grammars. Our experiments show that for most recurrent networks, their extraction performance decreases as the complexity of the underlying grammar increases. On grammars of lower complexity, most recurrent networks obtain desirable extraction performance. As for grammars with the highest level of complexity, while several complicated models fail with only certain recurrent networks having satisfactory extraction performance.},
+	journaltitle = {{arXiv}:1801.05420 [cs]},
+	author = {Wang, Qinglong and Zhang, Kaixuan and Ororbia {II}, Alexander G. and Xing, Xinyu and Liu, Xue and Giles, C. Lee},
+	date = {2018-01-15},
+	eprinttype = {arxiv},
+	eprint = {1801.05420},
+	keywords = {Computer Science - Machine Learning, Computer Science - Computation and Language},
+	annotation = {Comparison of performance (quality and closeness to ground truth) of extraction of deterministic finite automata from second-order {RNNs}/Elman-{RNN}/{MI}-{RNN}/{LSTM}/{GRU} with Tomita grammars; Result: second-order {RNNs} and {MI}-{RNNs} best; metric for comparison of complexity of Tomita grammars}
+}
+
+@article{wang_empirical_2017,
+	title = {An Empirical Evaluation of Rule Extraction from Recurrent Neural Networks},
+	url = {http://arxiv.org/abs/1709.10380},
+	abstract = {Rule extraction from black-box models is critical in domains that require model validation before implementation, as can be the case in credit scoring and medical diagnosis. Though already a challenging problem in statistical learning in general, the difficulty is even greater when highly non-linear, recursive models, such as recurrent neural networks ({RNNs}), are fit to data. Here, we study the extraction of rules from second-order recurrent neural networks trained to recognize the Tomita grammars. We show that production rules can be stably extracted from trained {RNNs} and that in certain cases the rules outperform the trained {RNNs}.},
+	journaltitle = {{arXiv}:1709.10380 [cs]},
+	author = {Wang, Qinglong and Zhang, Kaixuan and Ororbia {II}, Alexander G. and Xing, Xinyu and Liu, Xue and Giles, C. Lee},
+	date = {2017-09-29},
+	eprinttype = {arxiv},
+	eprint = {1709.10380},
+	keywords = {Computer Science - Machine Learning},
+	annotation = {Evaluation of performance influences for extraction of deterministic finite automata from second-order {RNNs} on Tomita grammars; Extraction method: Cluster weights by k-means, create transition diagram, simplify; Results: {DFAs} can be stably (i.e. initial state not important) and reliably (i.e. even for short sequence training) extracted, extraction is more efficient than full training (i.e. limited impact of training time and capacity)}
+}
+
+@inproceedings{yao_knowledge_2005,
+	title = {Knowledge extracted from trained neural networks: What's next?},
+	doi = {10.1117/12.604463},
+	shorttitle = {Knowledge extracted from trained neural networks},
+	abstract = {One of the major drawbacks or challenges of neural network models is that these models can not explain what they have done. Extracting rules from trained neural networks is one of the solutions for understanding the networks. However, what we should do with these extracted rules remains a research question. This paper tries to address issues on effectively and efficiently utilizing extracted rules or knowledge.},
+	booktitle = {Data Mining, Intrusion Detection, Information Assurance, and Data Networks Security},
+	author = {Yao, Jingtao},
+	date = {2005},
+	keywords = {Artificial neural network},
+	annotation = {Short list of knowledge extraction methods, possible directions of how to use the knowledge (explainability of the network/data, a priori knowledge, or understanding the learning process), and a shallow dive into rule insertion techniques}
+}
+
+@article{j._tomlin_computational_2003,
+	title = {Computational techniques for the verification of hybrid systems},
+	volume = {91},
+	doi = {10.1109/JPROC.2003.814621},
+	abstract = {Hybrid system theory lies at the intersection of the fields of engineering control theory and computer science verification. It is defined as the modeling, analysis, and control of systems that involve the interaction of both discrete state systems, represented by finite automata, and continuous state dynamics, represented by differential equations. The embedded autopilot of a modern commercial jet is a prime example of a hybrid system: the autopilot modes correspond to the application of different control laws, and the logic of mode switching is determined by the continuous state dynamics of the aircraft, as well as through interaction with the pilot. To understand the behavior of hybrid systems, to simulate, and to control these systems, theoretical advances, analyses, and numerical tools are needed. In this paper, we first present a general model for a hybrid system along with an overview of methods for verifying continuous and hybrid systems. We describe a particular verification technique for hybrid systems, based on two-person zero-sum game theory for automata and continuous dynamical systems. We then outline a numerical implementation of this technique using level set methods, and we demonstrate its use in the design and analysis of aircraft collision avoidance protocols and in verification of autopilot logic.},
+	pages = {986--1001},
+	journaltitle = {Proceedings of the {IEEE}},
+	shortjournal = {Proceedings of the {IEEE}},
+	author = {J. Tomlin, Claire and Mitchell, Ian and Bayen, Alexandre and Oishi, Meeko},
+	date = {2003-08-01},
+	annotation = {Algorithm to calculate the reachable set of an hybrid automaton, i.e. one containing discrete and continuous state changes}
+}
+
+@inproceedings{thrun_extracting_1994,
+	title = {Extracting Rules from Artifical Neural Networks with Distributed Representations},
+	abstract = {Althoughartificial neural networks have been applied in a variety of real-world scenarios with remarkable success, they have often been criticized for exhibiting a low degree of human comprehensibility. Techniques that compile compact sets of symbolic rules out of artificial neural networks offer a promising perspective to overcome this obvious deficiency of neural network representations. This paper presents an approach to the extraction of if-then rules from artificial neural networks. Its key mechanism is validity interval analysis, which is a generic tool for extracting symbolic knowledge by propagating rule-like knowledge through Backpropagation-style neural networks. Empirical studies in a robot arm domain illustrate the appropriateness of the proposed method for extracting rules from networks with real-valued and distributed representations.},
+	booktitle = {{NIPS}},
+	author = {Thrun, Sebastian},
+	date = {1994},
+	keywords = {Backpropagation, Neural Networks, Angular defect, Compiler, Interval arithmetic, Norm (social), Robot, Robotic arm},
+	annotation = {Validity Interval Analysis ({VIA}): Pedagogical rule extraction approach}
+}
+
+@inproceedings{akametalu_reachability-based_2014,
+	title = {Reachability-based safe learning with Gaussian processes},
+	doi = {10.1109/CDC.2014.7039601},
+	abstract = {Reinforcement learning for robotic applications faces the challenge of constraint satisfaction, which currently impedes its application to safety critical systems. Recent approaches successfully introduce safety based on reachability analysis, determining a safe region of the state space where the system can operate. However, overly constraining the freedom of the system can negatively affect performance, while attempting to learn less conservative safety constraints might fail to preserve safety if the learned constraints are inaccurate. We propose a novel method that uses a principled approach to learn the system's unknown dynamics based on a Gaussian process model and iteratively approximates the maximal safe set. A modified control strategy based on real-time model validation preserves safety under weaker conditions than current approaches. Our framework further incorporates safety into the reinforcement learning performance metric, allowing a better integration of safety and learning. We demonstrate our algorithm on simulations of a cart-pole system and on an experimental quadrotor application and show how our proposed scheme succeeds in preserving safety where current approaches fail to avoid an unsafe condition.},
+	eventtitle = {53rd {IEEE} Conference on Decision and Control},
+	pages = {1424--1431},
+	booktitle = {53rd {IEEE} Conference on Decision and Control},
+	author = {Akametalu, A. K. and Fisac, J. F. and Gillula, J. H. and Kaynama, S. and Zeilinger, M. N. and Tomlin, C. J.},
+	date = {2014-12},
+	keywords = {Algorithm design and analysis, approximation theory, cart-pole system, control engineering computing, Control systems, experimental quadrotor application, Gaussian process, Gaussian processes, helicopters, iterative approximation, iterative methods, Kernel, learning (artificial intelligence), Level set, Measurement, mobile robots, Reachability analysis, reachability-based safe learning, reinforcement learning, robotic application, Safety, safety critical system, safety-critical software},
+	annotation = {{RL} safe learning algorithm based on reachability analysis, i.e. given a set of safe states try to stay within; Novelties: Learn distribution of unknown system disturbances from data, validate this model online and sharpen safety policy if confidence is low, include safety metric into learning algorithm (example model-free base algo: {PGSD}); Result: stronger safety guarantees with less restrictions and better performance (through coupling of safety \& learning)}
+}
+
+@article{fridovich-keil_planning_2017,
+	title = {Planning, Fast and Slow: A Framework for Adaptive Real-Time Safe Trajectory Planning},
+	url = {http://arxiv.org/abs/1710.04731},
+	shorttitle = {Planning, Fast and Slow},
+	abstract = {Motion planning is an extremely well-studied problem in the robotics community, yet existing work largely falls into one of two categories: computationally efficient but with few if any safety guarantees, or able to give stronger guarantees but at high computational cost. This work builds on a recent development called {FaSTrack} in which a slow offline computation provides a modular safety guarantee for a faster online planner. We introduce the notion of "meta-planning" in which a refined offline computation enables safe switching between different online planners. This provides autonomous systems with the ability to adapt motion plans to a priori unknown environments in real-time as sensor measurements detect new obstacles, and the flexibility to maneuver differently in the presence of obstacles than they would in free space, all while maintaining a strict safety guarantee. We demonstrate the meta-planning algorithm both in simulation and in hardware using a small Crazyflie 2.0 quadrotor.},
+	journaltitle = {{arXiv}:1710.04731 [cs]},
+	author = {Fridovich-Keil, David and Herbert, Sylvia L. and Fisac, Jaime F. and Deglurkar, Sampada and Tomlin, Claire J.},
+	date = {2017-10-12},
+	eprinttype = {arxiv},
+	eprint = {1710.04731},
+	keywords = {Computer Science - Systems and Control, Computer Science - Computer Science and Game Theory},
+	annotation = {Comment: {ICRA}, International Conference on Robotics and Automation, {ICRA} 2018, 8 pages, 9 figures},
+	annotation = {Safety Framework for real-time trajectory planning that dynamically enforces a safety bound; extension of {FaSTrack} with switching rule (meta-planning) that can switch between determining the trajectory fast but conservatively and slow but precisely}
+}
+
+@incollection{tresp_network_1993,
+	title = {Network Structuring and Training Using Rule-based Knowledge},
+	url = {http://papers.nips.cc/paper/638-network-structuring-and-training-using-rule-based-knowledge.pdf},
+	pages = {871--878},
+	booktitle = {Advances in Neural Information Processing Systems 5},
+	publisher = {Morgan-Kaufmann},
+	author = {Tresp, Volker and Hollatz, Jürgen and Ahmad, Subutai},
+	editor = {Hanson, S. J. and Cowan, J. D. and Giles, C. L.},
+	date = {1993},
+	annotation = {Method to build a (today: very weak) model from rules only; methods to preserve rules, esp.: freeze and only add nodes, penalize deviation of weights from initial value, penalize deviation of complete network (output) from initial one}
+}
+
+@article{he_decision_2018,
+	title = {Decision Boundary Analysis of Adversarial Examples},
+	url = {https://openreview.net/forum?id=BkpiPMbA-},
+	abstract = {Deep neural networks ({DNNs}) are vulnerable to adversarial examples, which are carefully crafted instances aiming to cause prediction errors for {DNNs}. Recent research on adversarial examples has...},
+	author = {He, Warren and Li, Bo and Song, Dawn},
+	date = {2018-02-15},
+	annotation = {{OptMargin}: Automatically generate adversarial examples robust to small perturbations with little distance to original instance; Evades common defense mechanisms; may be detected by analysing the decision boundaries of the instance using trained {NN} (very costly)}
+}
+
+@article{dreossi_compositional_2017,
+	title = {Compositional Falsification of Cyber-Physical Systems with Machine Learning Components},
+	url = {http://arxiv.org/abs/1703.00978},
+	abstract = {Cyber-physical systems ({CPS}), such as automotive systems, are starting to include sophisticated machine learning ({ML}) components. Their correctness, therefore, depends on properties of the inner {ML} modules. While learning algorithms aim to generalize from examples, they are only as good as the examples provided, and recent efforts have shown that they can produce inconsistent output under small adversarial perturbations. This raises the question: can the output from learning components can lead to a failure of the entire {CPS}? In this work, we address this question by formulating it as a problem of falsifying signal temporal logic ({STL}) specifications for {CPS} with {ML} components. We propose a compositional falsification framework where a temporal logic falsifier and a machine learning analyzer cooperate with the aim of finding falsifying executions of the considered model. The efficacy of the proposed technique is shown on an automatic emergency braking system model with a perception component based on deep neural networks.},
+	journaltitle = {{arXiv}:1703.00978 [cs]},
+	author = {Dreossi, Tommaso and Donzé, Alexandre and Seshia, Sanjit A.},
+	date = {2017-03-02},
+	eprinttype = {arxiv},
+	eprint = {1703.00978},
+	keywords = {Computer Science - Machine Learning, Computer Science - Systems and Control},
+	annotation = {Formalisation of safety check (via falsification); framework around {DeepXplore}}
+}
+
+@article{ilyas_robust_2017,
+	title = {The Robust Manifold Defense: Adversarial Training using Generative Models},
+	url = {https://arxiv.org/abs/1712.09196},
+	shorttitle = {The Robust Manifold Defense},
+	abstract = {Deep neural networks are demonstrating excellent performance on several classical vision problems. However, these networks are vulnerable to adversarial examples, minutely modified images that induce arbitrary attacker-chosen output from the network. We propose a mechanism to protect against these adversarial inputs based on a generative model of the data. We introduce a pre-processing step that projects on the range of a generative model using gradient descent before feeding an input into a classifier. We show that this step provides the classifier with robustness against first-order, substitute model, and combined adversarial attacks. Using a min-max formulation, we show that there may exist adversarial examples even in the range of the generator, natural-looking images extremely close to the decision boundary for which the classifier has unjustifiedly high confidence. We show that adversarial training on the generative manifold can be used to make a classifier that is robust to these attacks. 
+Finally, we show how our method can be applied even without a pre-trained generative model using a recent method called the deep image prior. We evaluate our method on {MNIST}, {CelebA} and Imagenet and show robustness against the current state of the art attacks.},
+	author = {Ilyas, Andrew and Jalal, Ajil and Asteri, Eirini and Daskalakis, Constantinos and Dimakis, Alexandros G.},
+	date = {2017-12-26},
+	langid = {english},
+	annotation = {Remove possible adversarial perturbation (via projection) from input}
+}
+
+@article{richter_playing_2016,
+	title = {Playing for Data: Ground Truth from Computer Games},
+	url = {https://arxiv.org/abs/1608.02192},
+	shorttitle = {Playing for Data},
+	abstract = {Recent progress in computer vision has been driven by high-capacity models trained on large datasets. Unfortunately, creating large datasets with pixel-level labels has been extremely costly due to the amount of human effort required. In this paper, we present an approach to rapidly creating pixel-accurate semantic label maps for images extracted from modern computer games. Although the source code and the internal operation of commercial games are inaccessible, we show that associations between image patches can be reconstructed from the communication between the game and the graphics hardware. This enables rapid propagation of semantic labels within and across images synthesized by the game, with no access to the source code or the content. We validate the presented approach by producing dense pixel-level semantic annotations for 25 thousand images synthesized by a photorealistic open-world computer game. Experiments on semantic segmentation datasets show that using the acquired data to supplement real-world images significantly increases accuracy and that the acquired data enables reducing the amount of hand-labeled real-world data: models trained with game data and just 1/3 of the {CamVid} training set outperform models trained on the complete {CamVid} training set.},
+	author = {Richter, Stephan R. and Vineet, Vibhav and Roth, Stefan and Koltun, Vladlen},
+	date = {2016-08-07},
+	langid = {english},
+	annotation = {How to extract and tag rendered images from video games without access to source code; Usability: Up to 2/3 of the data may be rendered with up-to-date commercial rendering systems without loss of performance!!; Only applicable if game admits correct license}
+}
+
+@article{madry_towards_2017,
+	title = {Towards Deep Learning Models Resistant to Adversarial Attacks},
+	url = {https://arxiv.org/abs/1706.06083},
+	abstract = {Recent work has demonstrated that neural networks are vulnerable to adversarial examples, i.e., inputs that are almost indistinguishable from natural data and yet classified incorrectly by the network. In fact, some of the latest findings suggest that the existence of adversarial attacks may be an inherent weakness of deep learning models. To address this problem, we study the adversarial robustness of neural networks through the lens of robust optimization. This approach provides us with a broad and unifying view on much of the prior work on this topic. Its principled nature also enables us to identify methods for both training and attacking neural networks that are reliable and, in a certain sense, universal. In particular, they specify a concrete security guarantee that would protect against any adversary. These methods let us train networks with significantly improved resistance to a wide range of adversarial attacks. They also suggest the notion of security against a first-order adversary as a natural and broad security guarantee. We believe that robustness against such well-defined classes of adversaries is an important stepping stone towards fully resistant deep learning models.},
+	author = {Madry, Aleksander and Makelov, Aleksandar and Schmidt, Ludwig and Tsipras, Dimitris and Vladu, Adrian},
+	date = {2017-06-19},
+	langid = {english},
+	annotation = {Suggestion to use Projected Gradient Descent as universal tool for finding adversarial examples, and replace all samples by adversarial perturbed ones to obtain robust ({ReLU})-{NNs}}
+}

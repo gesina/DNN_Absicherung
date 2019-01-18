@@ -1,0 +1,50 @@
+% --------------------------
+% Vortrag:
+% Überblick über die Absicherung von DNNs im autonomen Fahren
+% 2018-12-20
+%
+% Gesina Schwalbe,
+% Kolloquium des Lehrstuhls KogSys, Fakultät WIAI, Universität Bamberg
+%
+% - Handoutheader -
+% ---------------------------
+
+\documentclass[ngerman, bibliography=totoc, abstract=true]{scrartcl}
+\usepackage[noamsthm, notheorems]{beamerarticle}
+\usepackage[%
+colorlinks=true, linkcolor=blue,
+pdfauthor={Gesina Schwalbe},
+pdftitle={Image Segmentation 2018 with Mask R-CNN},
+]{hyperref}
+
+
+\AtBeginDocument{\raggedbottom}
+
+% beamer article specific settings
+\mode<article>{
+%\setcounter{tocdepth}{2}
+%\setcounter{secnumdepth}{2}
+\setkomafont{descriptionlabel}{\bfseries}
+\setkomafont{paragraph}{\normalfont\bfseries}
+
+\setbeamertemplate{block begin}{\paragraph{\insertblocktitle}}
+\setbeamertemplate{block end}{}
+
+\setbeamertemplate{block alerted begin}{\paragraph{\emph{\insertblocktitle}}}
+\setbeamertemplate{block alerted end}{}
+
+\setbeamertemplate{frametitle}{\subsubsection{\insertframetitle}}
+%\setbeamertemplate{frame begin}{}
+%\setbeamertemplate{frame end}{}
+}
+
+% KOMA settings
+\setcapindent{0pt}
+\subject{Vortragsnotizen: Überblick über die Absicherung von DNNs im autonomen Fahren}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\ohead{DNN-Absicherung -- Notizen}
+\ihead{Gesina Schwalbe, 20.12.2018}
+\KOMAoptions{headsepline=true}
+
+\input{DNN-Absicherung}
